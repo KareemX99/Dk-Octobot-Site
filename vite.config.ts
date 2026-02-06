@@ -219,6 +219,7 @@ const plugins = [
 ];
 
 export default defineConfig({
+  base: process.env.GITHUB_PAGES ? "/Dk-Octobot-Site/" : "/",
   plugins,
   resolve: {
     alias: {

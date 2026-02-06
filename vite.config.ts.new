@@ -1,0 +1,45 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { VitePWA } from 'vite-plugin-pwa';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'DK-OctoBot',
+        short_name: 'DK-OctoBot',
+        description: 'AI-Powered Customer Service Chatbot',
+        theme_color: '#6366f1',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './client/src'),
+    },
+  },
+  base: process.env.GITHUB_PAGES ? '/Dk-Octobot-Site/' : '/',
+  build: {
+    outDir: 'dist/public',
+    emptyOutDir: true,
+  },
+  server: {
+    port: 3000,
+  },
+});
