@@ -51,6 +51,20 @@ export const blogPosts: BlogPost[] = [
     date: '2026-01-10',
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80',
   },
+  {
+    slug: 'chatbot-best-practices-2026',
+    category: 'Best Practices',
+    readTime: '12 min read',
+    date: '2026-02-10',
+    image: 'https://images.unsplash.com/photo-1558522195-e1a911476d1b?w=1200&h=630&fit=crop',
+  },
+  {
+    slug: 'psychology-of-chatbots',
+    category: 'Psychology & UX',
+    readTime: '10 min read',
+    date: '2026-02-15',
+    image: 'https://images.unsplash.com/photo-1507146426996-32f2e2b3dfb4?w=1200&h=630&fit=crop',
+  },
 ];
 
 export const blogContent: Record<string, Record<Language, { title: string; excerpt: string; content: string }>> = {
@@ -210,5 +224,4 @@ WhatsApp automation is no longer optional—it's essential for modern businesses
 لم تعد أتمتة واتساب اختيارية - إنها ضرورية للشركات الحديثة التي تتطلع إلى مقابلة العملاء أينما كانوا.`,
     },
   },
-  // Add more blog posts as needed
 };

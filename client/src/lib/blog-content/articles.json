@@ -142,5 +142,41 @@
     "tags": ["Multilingual", "Arabic", "Localization", "Cultural Adaptation", "Middle East"],
     "tagsAr": ["متعدد اللغات", "العربية", "التعريب", "التكيف الثقافي", "الشرق الأوسط"],
     "featured": false
+  },
+  {
+    "id": "9",
+    "slug": "chatbot-best-practices-2026",
+    "titleEn": "The Ultimate Guide to Chatbot Best Practices in 2026",
+    "titleAr": "الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2026",
+    "excerptEn": "Maximize your chatbot's effectiveness with these essential best practices. From personality design to seamless human handoff, we cover everything you need to know.",
+    "excerptAr": "ضاعف فعالية روبوت الدردشة الخاص بك مع هذه الممارسات الأساسية. من تصميم الشخصية إلى التسليم السلس للبشر، نغطي كل ما تحتاج إلى معرفته.",
+    "category": "Best Practices",
+    "categoryAr": "أفضل الممارسات",
+    "author": "DK-OctoBot Team",
+    "authorAr": "فريق DK-OctoBot",
+    "publishDate": "2026-02-10",
+    "readTime": 12,
+    "image": "https://images.unsplash.com/photo-1558522195-e1a911476d1b?w=1200&h=630&fit=crop",
+    "tags": ["Chatbot", "Best Practices", "UX Design", "Customer Experience", "AI"],
+    "tagsAr": ["روبوت الدردشة", "أفضل الممارسات", "تصميم تجربة المستخدم", "تجربة العملاء", "الذكاء الاصطناعي"],
+    "featured": false
+  },
+  {
+    "id": "10",
+    "slug": "psychology-of-chatbots",
+    "titleEn": "The Psychology of Chatbots: Why We Trust and Engage with AI",
+    "titleAr": "سيكولوجية روبوتات الدردشة: لماذا نثق ونتفاعل مع الذكاء الاصطناعي",
+    "excerptEn": "Delve into the psychological principles that make chatbots effective. Understand how conversational AI builds trust, rapport, and drives user engagement.",
+    "excerptAr": "تعمق في المبادئ النفسية التي تجعل روبوتات الدردشة فعالة. افهم كيف يبني الذكاء الاصطناعي للمحادثة الثقة والعلاقة ويدفع تفاعل المستخدم.",
+    "category": "Psychology & UX",
+    "categoryAr": "علم النفس وتجربة المستخدم",
+    "author": "DK-OctoBot Team",
+    "authorAr": "فريق DK-OctoBot",
+    "publishDate": "2026-02-15",
+    "readTime": 10,
+    "image": "https://images.unsplash.com/photo-1507146426996-32f2e2b3dfb4?w=1200&h=630&fit=crop",
+    "tags": ["Psychology", "Chatbot", "UX", "User Engagement", "Conversational AI"],
+    "tagsAr": ["علم النفس", "روبوت الدردشة", "تجربة المستخدم", "تفاعل المستخدم", "الذكاء الاصطناعي للمحادثة"],
+    "featured": false
   }
 ]

@@ -136,6 +136,25 @@ export default function BlogPost() {
               <Streamdown>{content.content}</Streamdown>
             </article>
 
+            {/* Author Bio */}
+            <div className="mt-12 p-6 rounded-xl bg-card border border-border">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-gradient-tech flex items-center justify-center text-white font-bold text-xl">
+                  DK
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold mb-2">
+                    {language === 'en' ? 'DK-OctoBot Team' : 'فريق DK-OctoBot'}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {language === 'en' 
+                      ? 'Our team of AI experts and customer service specialists share insights on chatbot technology, automation strategies, and digital transformation to help businesses succeed in the modern era.'
+                      : 'يشارك فريقنا من خبراء الذكاء الاصطناعي ومتخصصي خدمة العملاء رؤى حول تقنية روبوتات الدردشة واستراتيجيات الأتمتة والتحول الرقمي لمساعدة الشركات على النجاح في العصر الحديث.'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Share Again */}
             <div className="mt-12 pt-8 border-t border-border">
               <div className="flex items-center justify-between">
@@ -147,6 +166,63 @@ export default function BlogPost() {
                   {language === 'en' ? 'Share Article' : 'مشاركة المقال'}
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="py-16 bg-card/30">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-display font-bold mb-8">
+              {language === 'en' ? 'Related Articles' : 'مقالات ذات صلة'}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {blogPosts
+                .filter(p => p.slug !== slug && p.category === post.category)
+                .slice(0, 3)
+                .map((relatedPost) => {
+                  const relatedContent = blogContent[relatedPost.slug]?.[language];
+                  if (!relatedContent) return null;
+                  
+                  return (
+                    <Link key={relatedPost.slug} href={`/${language}/blog/${relatedPost.slug}`}>
+                      <a className="group block h-full">
+                        <div className="h-full rounded-xl overflow-hidden bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-tech">
+                          <div className="relative h-48 overflow-hidden">
+                            <img
+                              src={relatedPost.image}
+                              alt={relatedContent.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                              <span className="flex items-center gap-1">
+                                <Calendar className="h-3 w-3" />
+                                {new Date(relatedPost.date).toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US', {
+                                  month: 'short',
+                                  day: 'numeric',
+                                })}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <Clock className="h-3 w-3" />
+                                {relatedPost.readTime}
+                              </span>
+                            </div>
+                            <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                              {relatedContent.title}
+                            </h3>
+                            <p className="text-muted-foreground text-sm line-clamp-2">
+                              {relatedContent.excerpt}
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  );
+                })}
             </div>
           </div>
         </div>
