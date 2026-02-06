@@ -18,7 +18,8 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import PortfolioDetail from "./pages/PortfolioDetail";
 import LiveChatDemo from "./components/LiveChatDemo";
-import ExitIntentPopup from "./components/ExitIntentPopup";
+import ScrollToTop from "./components/ScrollToTop";
+
 import LimitedTimeOffer from "./components/LimitedTimeOffer";
 
 function Router() {
@@ -104,9 +105,10 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <LimitedTimeOffer />
+            <ScrollToTop />
             <Router />
             <LiveChatDemo />
-            <ExitIntentPopup />
+
           </TooltipProvider>
         </LanguageProvider>
       </ThemeProvider>

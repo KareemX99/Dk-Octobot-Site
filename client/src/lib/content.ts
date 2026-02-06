@@ -118,19 +118,19 @@ export const caseStudyNames: Record<string, Record<Language, string>> = {
 
 // Pricing data
 export const platforms = [
-  { id: 'facebook', name: 'Facebook', icon: 'Facebook' },
-  { id: 'whatsapp', name: 'WhatsApp', icon: 'MessageCircle' },
-  { id: 'instagram', name: 'Instagram', icon: 'Instagram' },
-  { id: 'telegram', name: 'Telegram', icon: 'Send' },
-  { id: 'website', name: 'Website', icon: 'Globe' },
-  { id: 'custom', name: 'Custom', icon: 'Settings' },
+  { id: 'facebook', name: 'Facebook', nameAr: 'فيسبوك', icon: 'Facebook' },
+  { id: 'whatsapp', name: 'WhatsApp', nameAr: 'واتساب', icon: 'MessageCircle' },
+  { id: 'instagram', name: 'Instagram', nameAr: 'إنستجرام', icon: 'Instagram' },
+  { id: 'telegram', name: 'Telegram', nameAr: 'تيليجرام', icon: 'Send' },
+  { id: 'website', name: 'Website', nameAr: 'موقع ويب', icon: 'Globe' },
+  { id: 'custom', name: 'Custom', nameAr: 'مخصص', icon: 'Settings' },
 ];
 
 export const durations = [
-  { id: '1month', label: '1 Month', discount: 0 },
-  { id: '3months', label: '3 Months', discount: 0 },
-  { id: '6months', label: '6 Months', discount: 10 },
-  { id: '1year', label: '1 Year', discount: 10 },
+  { id: '1month', label: '1 Month', labelAr: 'شهر واحد', discount: 0 },
+  { id: '3months', label: '3 Months', labelAr: '3 أشهر', discount: 0 },
+  { id: '6months', label: '6 Months', labelAr: '6 أشهر', discount: 10 },
+  { id: '1year', label: '1 Year', labelAr: 'سنة واحدة', discount: 10 },
 ];
 
 export const pricingItems = [
@@ -146,6 +146,11 @@ export const pricingItems = [
       'Automatic deal closing',
       'Admin WhatsApp notifications',
     ],
+    featuresAr: [
+      'فهم كامل للمنتجات/الخدمات',
+      'إغلاق الصفقات تلقائياً',
+      'إشعارات واتساب للمسؤول',
+    ],
   },
   {
     id: 'comment-replies',
@@ -158,6 +163,11 @@ export const pricingItems = [
       'Auto-reply to comments',
       'Hide negative comments',
       'Full comment control',
+    ],
+    featuresAr: [
+      'رد تلقائي على التعليقات',
+      'إخفاء التعليقات السلبية',
+      'تحكم كامل في التعليقات',
     ],
   },
   {
@@ -172,6 +182,11 @@ export const pricingItems = [
       'Comprehensive customer analysis',
       'Understand customer interests',
       'Personalized follow-up messages',
+    ],
+    featuresAr: [
+      'تحليل شامل للعملاء',
+      'فهم اهتمامات العملاء',
+      'رسائل متابعة مخصصة',
     ],
   },
 ];

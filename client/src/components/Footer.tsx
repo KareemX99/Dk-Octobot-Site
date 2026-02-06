@@ -33,9 +33,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-card/30 backdrop-blur-sm border-t border-border/50">
       <div className="container py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
           {/* Brand Section */}
-          <div className="lg:col-span-2">
+          <div className="col-span-1 lg:col-span-2">
             <Link href={`/${language}`} className="inline-flex items-center gap-3 mb-6 group">
               <div className="relative">
                 <div className="w-12 h-12 rounded-lg gradient-tech flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
@@ -72,13 +72,15 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Links Container - 3 columns on mobile */}
+          <div className="col-span-1 lg:col-span-3 grid grid-cols-3 gap-6">
           {/* Product Links */}
           <div>
-            <h3 className="font-display font-bold text-lg mb-4">{t.footer.product}</h3>
-            <ul className="space-y-3">
+            <h3 className="font-display font-bold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">{t.footer.product}</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {productLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+                  <Link href={link.href} className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -88,11 +90,11 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="font-display font-bold text-lg mb-4">{t.footer.company}</h3>
-            <ul className="space-y-3">
+            <h3 className="font-display font-bold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">{t.footer.company}</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+                  <Link href={link.href} className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -102,16 +104,17 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-display font-bold text-lg mb-4">{t.footer.legal}</h3>
-            <ul className="space-y-3">
+            <h3 className="font-display font-bold text-sm sm:text-base lg:text-lg mb-3 sm:mb-4">{t.footer.legal}</h3>
+            <ul className="space-y-2 sm:space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
+                  <Link href={link.href} className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
+          </div>
           </div>
         </div>
 

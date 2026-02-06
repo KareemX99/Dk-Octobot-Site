@@ -5,7 +5,7 @@
  * - Professional tab interface
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -28,6 +28,34 @@ const platformIconMap: Record<string, any> = {
 export default function Pricing() {
   const { language, t } = useLanguage();
   const [selectedDuration, setSelectedDuration] = useState('1month');
+  const [activeTab, setActiveTab] = useState('facebook');
+
+  useEffect(() => {
+    // Check if there's a hash in the URL
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      // Map the hash to platform IDs
+      const platformMap: Record<string, string> = {
+        'whatsapp': 'whatsapp',
+        'messenger': 'facebook',
+        'instagram': 'instagram',
+        'telegram': 'telegram',
+        'website': 'website'
+      };
+      
+      const platformId = platformMap[hash];
+      if (platformId) {
+        setActiveTab(platformId);
+        // Scroll to pricing section after a short delay
+        setTimeout(() => {
+          const pricingSection = document.querySelector('[data-pricing-section]');
+          if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    }
+  }, []);
 
   const calculatePrice = (basePrice: number) => {
     const duration = durations.find(d => d.id === selectedDuration);
@@ -76,7 +104,7 @@ export default function Pricing() {
                     : 'bg-card/50 border border-border/50 hover:border-primary/30'
                 }`}
               >
-                {duration.label}
+                {language === 'en' ? duration.label : (duration as any).labelAr}
                 {duration.discount > 0 && (
                   <span className="ml-2 text-xs bg-white/20 px-2 py-1 rounded-full">
                     Save {duration.discount}%
@@ -87,19 +115,19 @@ export default function Pricing() {
           </div>
 
           {/* Platform Tabs */}
-          <Tabs defaultValue="facebook" className="w-full">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full" data-pricing-section>
             <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-12 bg-card/50 p-2 rounded-xl border border-border/50">
               {platforms.map((platform) => (
                 <TabsTrigger
                   key={platform.id}
                   value={platform.id}
-                  className="rounded-lg data-[state=active]:gradient-tech data-[state=active]:text-white data-[state=active]:shadow-tech flex items-center gap-2"
+                  className="rounded-lg data-[state=active]:gradient-tech data-[state=active]:text-white data-[state=active]:shadow-glow data-[state=inactive]:bg-transparent data-[state=inactive]:text-muted-foreground hover:bg-card/80 transition-all duration-300 flex items-center justify-center gap-2 py-3"
                 >
                   {(() => {
                     const Icon = platformIconMap[platform.icon];
                     return Icon ? <Icon className="h-4 w-4" /> : null;
                   })()}
-                  <span className="hidden sm:inline">{platform.name}</span>
+                  <span className="hidden sm:inline">{language === 'en' ? platform.name : (platform as any).nameAr}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -143,7 +171,7 @@ export default function Pricing() {
                         </div>
 
                         <ul className="space-y-3">
-                          {item.features.map((feature, idx) => (
+                          {(language === 'en' ? item.features : (item as any).featuresAr || item.features).map((feature: string, idx: number) => (
                             <li key={idx} className="flex items-start gap-2">
                               <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                               <span className="text-sm">{feature}</span>
