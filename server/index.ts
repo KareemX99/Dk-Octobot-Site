@@ -156,6 +156,62 @@ async function startServer() {
     }
   });
 
+  // API endpoint for voice chat with n8n
+  app.post("/api/chat/voice", async (req, res) => {
+    try {
+      const { audio, sessionId } = req.body;
+
+      // Basic validation
+      if (!audio) {
+        return res.status(400).json({
+          success: false,
+          error: "Audio is required.",
+        });
+      }
+
+      // Check if n8n webhook is configured
+      const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
+      if (!n8nWebhookUrl) {
+        console.error("N8N_WEBHOOK_URL not configured!");
+        return res.status(500).json({
+          success: false,
+          response: "عذراً، الخدمة غير متاحة حالياً. جرب تاني بعدين! 🙏",
+        });
+      }
+
+      // Forward voice message to n8n webhook
+      const n8nResponse = await fetch(n8nWebhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "voice",
+          audio: audio,
+          sessionId: sessionId || `session_${Date.now()}`,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (!n8nResponse.ok) {
+        throw new Error(`n8n responded with status ${n8nResponse.status}`);
+      }
+
+      const n8nData = await n8nResponse.json();
+
+      return res.status(200).json({
+        success: true,
+        response: n8nData.response || n8nData.message || n8nData.output || "تم استلام رسالتك الصوتية! 👍",
+        image: n8nData.image || null,
+        transcription: n8nData.transcription || null,
+      });
+    } catch (error) {
+      console.error("Error in voice chat endpoint:", error);
+      return res.status(500).json({
+        success: false,
+        response: "حصل مشكلة في إرسال الرسالة الصوتية. جرب تاني! 🔄",
+      });
+    }
+  });
+
   // Serve static files from dist/public in production
   const staticPath =
     process.env.NODE_ENV === "production"
