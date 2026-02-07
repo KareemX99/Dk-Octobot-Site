@@ -31,57 +31,61 @@ export default function Contact() {
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = language === 'en' ? 'Name is required' : 'الاسم مطلوب';
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = language === 'en' ? 'Email is required' : 'البريد الإلكتروني مطلوب';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = language === 'en' ? 'Invalid email format' : 'صيغة البريد الإلكتروني غير صحيحة';
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = language === 'en' ? 'Message is required' : 'الرسالة مطلوبة';
     } else if (formData.message.trim().length < 10) {
       newErrors.message = language === 'en' ? 'Message must be at least 10 characters' : 'يجب أن تكون الرسالة 10 أحرف على الأقل';
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       toast.error(language === 'en' ? 'Please fix the errors in the form' : 'يرجى تصحيح الأخطاء في النموذج');
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // In production, you would send to an API endpoint:
-      // await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // });
-      
-      toast.success(language === 'en' 
-        ? 'Message sent successfully! We\'ll get back to you soon.' 
+      // Send form data to backend API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      toast.success(language === 'en'
+        ? 'Message sent successfully! We\'ll get back to you soon.'
         : 'تم إرسال الرسالة بنجاح! سنعاود الاتصال بك قريبًا.');
-      
+
       setFormData({ name: '', email: '', phone: '', message: '' });
       setErrors({});
     } catch (error) {
-      toast.error(language === 'en' 
-        ? 'Failed to send message. Please try again.' 
+      console.error('Contact form error:', error);
+      toast.error(language === 'en'
+        ? 'Failed to send message. Please try again.'
         : 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.');
     } finally {
       setIsSubmitting(false);
@@ -91,12 +95,12 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blob-shape blur-3xl" />
-        
+
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <h1 className="text-5xl md:text-6xl font-display font-bold">
@@ -105,7 +109,7 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              {language === 'en' 
+              {language === 'en'
                 ? 'Ready to transform your customer service? Let\'s talk about how DK-OctoBot can help your business grow.'
                 : 'مستعد لتحويل خدمة العملاء؟ دعنا نتحدث عن كيف يمكن لـ DK-OctoBot مساعدة عملك على النمو.'}
             </p>
@@ -180,7 +184,7 @@ export default function Contact() {
                   {language === 'en' ? 'Business Hours' : 'ساعات العمل'}
                 </h3>
                 <p className="text-muted-foreground">
-                  {language === 'en' 
+                  {language === 'en'
                     ? 'Sunday - Thursday: 9:00 AM - 6:00 PM (GMT+2)'
                     : 'الأحد - الخميس: 9:00 صباحاً - 6:00 مساءً (GMT+2)'}
                 </p>
@@ -263,7 +267,7 @@ export default function Contact() {
                   className="w-full rounded-full bg-gradient-to-r from-primary to-cyan hover:shadow-tech-lg transition-all duration-300"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting 
+                  {isSubmitting
                     ? (language === 'en' ? 'Sending...' : 'جاري الإرسال...')
                     : (language === 'en' ? 'Send Message' : 'إرسال الرسالة')}
                 </Button>

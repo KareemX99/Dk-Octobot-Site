@@ -1,0 +1,188 @@
+{
+    "nodes": [
+        {
+            "parameters": {
+                "httpMethod": "POST",
+                "path": "Dkoctobot-sites",
+                "responseMode": "responseNode",
+                "options": {}
+            },
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 2,
+            "position": [
+                128,
+                64
+            ],
+            "id": "b8ba6d04-c2d3-4d75-921e-5efe9867392c",
+            "name": "Website Chat Webhook",
+            "webhookId": "dkoctobot-sites-webhook"
+        },
+        {
+            "parameters": {
+                "jsCode": "// Extract message and session from website chat\nconst webhookData = $('Website Chat Webhook').first().json;\n\nconst message = webhookData.body?.message || webhookData.message || '';\nconst sessionId = webhookData.body?.sessionId || webhookData.sessionId || 'website_visitor';\nconst timestamp = webhookData.body?.timestamp || new Date().toISOString();\n\nreturn [{\n  json: {\n    message: message,\n    sessionId: sessionId,\n    timestamp: timestamp,\n    source: 'website'\n  }\n}];"
+            },
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                352,
+                64
+            ],
+            "id": "29e0c4c3-1913-4dfd-9a5f-c29672c6c1a4",
+            "name": "Extract Message"
+        },
+        {
+            "parameters": {
+                "jsCode": "// Process AI response and prepare for website\nconst aiResponse = $('AI Request').first().json;\n\n// Extract the response text from various possible formats\nlet responseText = '';\nlet imageUrl = '';\n\nif (aiResponse.text) {\n  responseText = aiResponse.text;\n} else if (aiResponse.response) {\n  responseText = aiResponse.response;\n} else if (aiResponse.message) {\n  responseText = aiResponse.message;\n} else if (aiResponse.output) {\n  responseText = aiResponse.output;\n} else if (typeof aiResponse === 'string') {\n  responseText = aiResponse;\n} else {\n  responseText = 'شكراً لتواصلك معنا! سيتم الرد عليك قريباً.';\n}\n\n// Extract image URL from response text using regex\n// Matches URLs ending with common image extensions\nconst imageUrlRegex = /(https?:\\/\\/[^\\s]+\\.(jpg|jpeg|png|gif|webp|svg|bmp))/gi;\nconst imageMatches = responseText.match(imageUrlRegex);\n\nif (imageMatches && imageMatches.length > 0) {\n  imageUrl = imageMatches[0];\n  // Remove the image URL from the response text\n  responseText = responseText.replace(imageUrl, '').trim();\n}\n\n// Clean up the response (remove markdown code blocks if any)\nresponseText = responseText\n  .replace(/```json/g, '')\n  .replace(/```/g, '')\n  .replace(/\\{[^}]*\"START\"\\s*:\\s*\"YES\"[^}]*\\}/gi, '')\n  .replace(/\\n\\n+/g, '\\n\\n')\n  .trim();\n\nreturn [\n  {\n    json: {\n      response: responseText,\n      image: imageUrl\n    }\n  }\n];"
+            },
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                1024,
+                64
+            ],
+            "id": "2ab8b7de-b2f9-4371-86f3-226e6c495626",
+            "name": "Process Response"
+        },
+        {
+            "parameters": {
+                "respondWith": "json",
+                "responseBody": "={{ JSON.stringify({ response: $json.response, image: $json.image }) }}",
+                "options": {
+                    "responseCode": 200,
+                    "responseHeaders": {
+                        "entries": [
+                            {
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "name": "Access-Control-Allow-Origin",
+                                "value": "*"
+                            }
+                        ]
+                    }
+                }
+            },
+            "type": "n8n-nodes-base.respondToWebhook",
+            "typeVersion": 1.1,
+            "position": [
+                1248,
+                64
+            ],
+            "id": "b2f33732-efc6-446b-b530-5f9c707b61c4",
+            "name": "Send Response"
+        },
+        {
+            "parameters": {
+                "assignments": {
+                    "assignments": [
+                        {
+                            "id": "bad530fb-296b-45d8-9216-2d0becb4107b",
+                            "name": "Bot Url",
+                            "value": "https://www.dk.octobot.it.com/api/v1/prediction/3b5d3c36-2d14-47aa-abe6-0010cc575d3f",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.set",
+            "typeVersion": 3.4,
+            "position": [
+                576,
+                64
+            ],
+            "id": "b97a32c0-f497-4687-b182-08a610770bd7",
+            "name": "Keys"
+        },
+        {
+            "parameters": {
+                "method": "POST",
+                "url": "={{ $json['Bot Url'] }}",
+                "sendHeaders": true,
+                "headerParameters": {
+                    "parameters": [
+                        {
+                            "name": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ]
+                },
+                "sendBody": true,
+                "contentType": "raw",
+                "rawContentType": "application/json",
+                "body": "={\n  \"question\": \"{{ $('Extract Message').item.json.message }}\",\n  \"chatId\": \"{{ $('Extract Message').item.json.sessionId }}\",\n  \"overrideConfig\": {\n    \"sessionId\": \"{{ $('Extract Message').item.json.sessionId }}\"\n  }\n}",
+                "options": {}
+            },
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4.2,
+            "position": [
+                800,
+                64
+            ],
+            "id": "5592032a-5a71-48c5-b4ae-99b379ca2fe9",
+            "name": "AI Request"
+        }
+    ],
+    "connections": {
+        "Website Chat Webhook": {
+            "main": [
+                [
+                    {
+                        "node": "Extract Message",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Extract Message": {
+            "main": [
+                [
+                    {
+                        "node": "Keys",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Process Response": {
+            "main": [
+                [
+                    {
+                        "node": "Send Response",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Keys": {
+            "main": [
+                [
+                    {
+                        "node": "AI Request",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "AI Request": {
+            "main": [
+                [
+                    {
+                        "node": "Process Response",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "pinData": {},
+    "meta": {
+        "instanceId": "33c20aca7710df08383af992e20b6acb75c86bc0f6059a4827ae136993943fdd"
+    }
+}
