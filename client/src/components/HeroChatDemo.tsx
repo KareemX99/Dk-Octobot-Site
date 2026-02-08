@@ -270,7 +270,7 @@ export default function HeroChatDemo() {
             <div className="flex items-center gap-3 p-4 border-b border-border/50 bg-gradient-to-r from-primary/10 to-cyan/10">
                 <div className="relative">
                     <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                        <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" />
+                        <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                     <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-500 rounded-full border-2 border-card" />
                 </div>
@@ -293,13 +293,13 @@ export default function HeroChatDemo() {
                     >
                         {message.isBot && (
                             <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0">
-                                <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" />
+                                <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" loading="lazy" />
                             </div>
                         )}
                         <div
                             className={`max-w-[75%] rounded-2xl text-sm leading-relaxed overflow-hidden ${message.isBot
-                                    ? 'bg-muted text-foreground rounded-bl-sm'
-                                    : 'bg-gradient-to-r from-primary to-cyan text-white rounded-br-sm'
+                                ? 'bg-muted text-foreground rounded-bl-sm'
+                                : 'bg-gradient-to-r from-primary to-cyan text-white rounded-br-sm'
                                 }`}
                         >
                             {/* Message Text */}
@@ -329,7 +329,7 @@ export default function HeroChatDemo() {
                 {isTyping && (
                     <div className={`flex items-end gap-2 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
                         <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0">
-                            <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" />
+                            <img src="/bot-avatar.jpg" alt="OctoBot" className="w-full h-full object-cover" loading="lazy" />
                         </div>
                         <div className="bg-muted px-4 py-3 rounded-2xl rounded-bl-sm">
                             <div className="flex gap-1">

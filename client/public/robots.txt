@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://dk-octobot.manus.space/sitemap.xml
+Sitemap: https://octobot.it.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

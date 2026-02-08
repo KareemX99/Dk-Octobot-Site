@@ -5,9 +5,12 @@
  * - Smooth expand/collapse animations
  */
 
+import { useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
+import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import {
   Accordion,
   AccordionContent,
@@ -94,23 +97,56 @@ export default function FAQ() {
     },
     {
       question: 'هل يمكنني تخصيص ردود البوت؟',
-      answer: 'بالتأكيد! لديك تحكم كامل في سلوك البوت وردوده وسير العمل. نوفر أدوات بناء تدفقات مرئية وضوابط لضمان أن البوت يمثل علامتك التجارية بشكل مثالي.',
-    },
-    {
-      question: 'هل بياناتي آمنة؟',
       answer: 'نعم، نأخذ أمان البيانات على محمل الجد. يتم تشفير جميع بيانات العملاء وتخزينها بشكل آمن. نلتزم بمعايير حماية البيانات الدولية ولا نشارك بياناتك مع أطراف ثالثة.',
     },
   ];
 
+  // Add FAQPage structured data for rich results
+  useEffect(() => {
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    };
+
+    let scriptTag = document.querySelector('script[data-schema="faq"]') as HTMLScriptElement;
+    if (!scriptTag) {
+      scriptTag = document.createElement('script') as HTMLScriptElement;
+      scriptTag.type = 'application/ld+json';
+      scriptTag.setAttribute('data-schema', 'faq');
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify(faqSchema);
+
+    return () => {
+      scriptTag?.remove();
+    };
+  }, [faqs, language]);
+
   return (
     <div className="min-h-screen">
+      <SEO
+        title={language === 'en' ? 'Frequently Asked Questions' : 'الأسئلة الشائعة'}
+        description={language === 'en'
+          ? 'Find answers to common questions about DK-OctoBot AI chatbot platform, pricing, setup, and features.'
+          : 'اعثر على إجابات للأسئلة الشائعة حول منصة شات بوت DK-OctoBot، الأسعار، الإعداد، والميزات.'}
+        keywords="FAQ, frequently asked questions, DK-OctoBot, AI chatbot, pricing, setup, أسئلة شائعة, شات بوت"
+      />
+      <LocalBusinessSchema />
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
         <div className="absolute top-20 left-0 w-96 h-96 bg-accent/10 rounded-full blob-shape blur-3xl" />
-        
+
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <h1 className="text-5xl md:text-6xl font-display font-bold">
@@ -119,7 +155,7 @@ export default function FAQ() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              {language === 'en' 
+              {language === 'en'
                 ? 'Find answers to common questions about DK-OctoBot'
                 : 'اعثر على إجابات للأسئلة الشائعة حول DK-OctoBot'}
             </p>

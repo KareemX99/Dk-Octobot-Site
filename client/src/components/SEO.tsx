@@ -15,13 +15,13 @@ export default function SEO({
   title,
   description,
   keywords,
-  image = 'https://private-us-east-1.manuscdn.com/sessionFile/kvk8t54dYp8FqVkMpydns7/sandbox/t1480D5Ow1AqYUzbtDiEBK-img-1_1770324849000_na1fn_YUdzdHJhY3Qtb3JnYW5pYy1mbHVpZC1iYWNrZ3Jv.png',
+  image = '/og-image.png',
   type = 'website',
   author,
   publishedTime,
 }: SEOProps) {
   const { language } = useLanguage();
-  const siteUrl = 'https://dk-octobot.manus.space';
+  const siteUrl = 'https://octobot.it.com';
   const fullTitle = `${title} | DK-OctoBot`;
 
   useEffect(() => {
@@ -32,13 +32,13 @@ export default function SEO({
     const updateMetaTag = (name: string, content: string, isProperty = false) => {
       const attribute = isProperty ? 'property' : 'name';
       let element = document.querySelector(`meta[${attribute}="${name}"]`);
-      
+
       if (!element) {
         element = document.createElement('meta');
         element.setAttribute(attribute, name);
         document.head.appendChild(element);
       }
-      
+
       element.setAttribute('content', content);
     };
 

@@ -47,7 +47,7 @@ export default function BlogPost() {
         title: content.title,
         text: content.excerpt,
         url: window.location.href,
-      }).catch(() => {});
+      }).catch(() => { });
     } else {
       navigator.clipboard.writeText(window.location.href);
       toast.success(language === 'en' ? 'Link copied to clipboard!' : 'تم نسخ الرابط!');
@@ -62,14 +62,14 @@ export default function BlogPost() {
         type="article"
         image={post.image}
         author="DK-OctoBot Team"
-        publishedTime={post.date}
+        publishedTime={post.publishDate}
       />
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background" />
-        
+
         <div className="container relative">
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Back Button */}
@@ -94,7 +94,7 @@ export default function BlogPost() {
             <div className="flex items-center gap-6 text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                {new Date(post.date).toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US', {
+                {new Date(post.publishDate).toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
@@ -139,15 +139,15 @@ export default function BlogPost() {
             {/* Author Bio */}
             <div className="mt-12 p-6 rounded-xl bg-card border border-border">
               <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-tech flex items-center justify-center text-white font-bold text-xl">
-                  DK
+                <div className="w-16 h-16 rounded-full gradient-tech flex items-center justify-center overflow-hidden">
+                  <img src="/logo-compact.svg" alt="OctoBot Logo" className="w-10 h-10 object-contain brightness-0 invert" loading="lazy" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold mb-2">
                     {language === 'en' ? 'DK-OctoBot Team' : 'فريق DK-OctoBot'}
                   </h3>
                   <p className="text-muted-foreground">
-                    {language === 'en' 
+                    {language === 'en'
                       ? 'Our team of AI experts and customer service specialists share insights on chatbot technology, automation strategies, and digital transformation to help businesses succeed in the modern era.'
                       : 'يشارك فريقنا من خبراء الذكاء الاصطناعي ومتخصصي خدمة العملاء رؤى حول تقنية روبوتات الدردشة واستراتيجيات الأتمتة والتحول الرقمي لمساعدة الشركات على النجاح في العصر الحديث.'}
                   </p>
@@ -185,7 +185,7 @@ export default function BlogPost() {
                 .map((relatedPost) => {
                   const relatedContent = blogContent[relatedPost.slug]?.[language];
                   if (!relatedContent) return null;
-                  
+
                   return (
                     <Link key={relatedPost.slug} href={`/${language}/blog/${relatedPost.slug}`}>
                       <a className="group block h-full">
@@ -201,7 +201,7 @@ export default function BlogPost() {
                             <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                               <span className="flex items-center gap-1">
                                 <Calendar className="h-3 w-3" />
-                                {new Date(relatedPost.date).toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US', {
+                                {new Date(relatedPost.publishDate).toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US', {
                                   month: 'short',
                                   day: 'numeric',
                                 })}
