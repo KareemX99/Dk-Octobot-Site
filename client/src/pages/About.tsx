@@ -3,12 +3,13 @@
  * - Story section with organic flow
  * - Metrics cards with blob shapes
  * - Team values with warm gradients
+ * - Founders section
  */
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Users, Target, Zap, Heart } from 'lucide-react';
+import { Users, Target, Zap, Heart, User } from 'lucide-react';
 import SEO from '@/components/SEO';
 import { seoContent } from '@/lib/seo';
 
@@ -22,11 +23,24 @@ export default function About() {
     { value: '<2s', label: language === 'en' ? 'Response Time' : 'وقت الاستجابة' },
   ];
 
+  const founders = [
+    {
+      name: language === 'en' ? 'Eng. Kareem Gaballah' : 'م/ كريم جاب الله',
+      title: language === 'en' ? 'Chief Executive Officer' : 'الرئيس التنفيذي',
+      role: 'CEO',
+    },
+    {
+      name: language === 'en' ? 'Eng. Mohamed Osama' : 'م/ محمد أسامه',
+      title: language === 'en' ? 'Chief Technology Officer' : 'المدير التقني',
+      role: 'CTO',
+    },
+  ];
+
   const values = [
     {
       icon: Users,
       title: language === 'en' ? 'Customer First' : 'العميل أولاً',
-      desc: language === 'en' 
+      desc: language === 'en'
         ? 'Every decision we make is centered around delivering value to our customers.'
         : 'كل قرار نتخذه يتمحور حول تقديم قيمة لعملائنا.',
     },
@@ -53,15 +67,44 @@ export default function About() {
     },
   ];
 
+  // SEO Structured Data for Organization with Founders
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DK-OctoBot",
+    "description": language === 'en'
+      ? "AI-Powered Customer Service & Sales Automation Platform"
+      : "منصة خدمة العملاء وأتمتة المبيعات المدعومة بالذكاء الاصطناعي",
+    "url": "https://octobot.it.com",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Kareem Gaballah",
+        "jobTitle": "CEO"
+      },
+      {
+        "@type": "Person",
+        "name": "Mohamed Osama",
+        "jobTitle": "CTO"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
+      {/* SEO Schema Script */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-primary/5" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 rounded-full blob-shape blur-3xl" />
-        
+
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <h1 className="text-5xl md:text-6xl font-display font-bold">
@@ -70,7 +113,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              {language === 'en' 
+              {language === 'en'
                 ? 'Revolutionizing customer service with AI that understands, learns, and delivers exceptional experiences 24/7.'
                 : 'إحداث ثورة في خدمة العملاء بالذكاء الاصطناعي الذي يفهم ويتعلم ويقدم تجارب استثنائية على مدار الساعة.'}
             </p>
@@ -121,8 +164,50 @@ export default function About() {
         </div>
       </section>
 
+      {/* Founders Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+              {language === 'en' ? 'Our Founders' : 'المؤسسون'}
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              {language === 'en'
+                ? 'Meet the visionaries behind DK-OctoBot'
+                : 'تعرف على أصحاب الرؤية وراء DK-OctoBot'}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {founders.map((founder, index) => (
+              <div
+                key={index}
+                className="p-8 rounded-3xl bg-card border border-border shadow-organic hover:shadow-organic-lg transition-all duration-500 text-center animate-in fade-in slide-in-from-bottom-4"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                {/* Avatar Placeholder */}
+                <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6">
+                  <User className="h-12 w-12 text-white" />
+                </div>
+
+                {/* Name */}
+                <h3 className="text-2xl font-display font-bold mb-2">{founder.name}</h3>
+
+                {/* Role Badge */}
+                <div className="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-2">
+                  {founder.role}
+                </div>
+
+                {/* Title */}
+                <p className="text-muted-foreground">{founder.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5">
+      <section className="py-20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
