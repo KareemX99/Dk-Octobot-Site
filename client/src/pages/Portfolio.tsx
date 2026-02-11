@@ -20,12 +20,12 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-coral/10 rounded-full blob-shape blur-3xl" />
-        
+
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <h1 className="text-5xl md:text-6xl font-display font-bold">
@@ -34,7 +34,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              {language === 'en' 
+              {language === 'en'
                 ? 'Real results from businesses that transformed their customer service with DK-OctoBot'
                 : 'نتائج حقيقية من الشركات التي حولت خدمة العملاء مع DK-OctoBot'}
             </p>
@@ -85,8 +85,30 @@ export default function Portfolio() {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {/* Header with gradient */}
-                  <div className="relative h-32 bg-gradient-to-br from-primary via-coral to-accent p-6 flex items-center justify-center">
-                    <TrendingUp className="h-12 w-12 text-white opacity-80" />
+                  <div className={`relative h-32 flex items-center justify-center overflow-hidden ${study.logo ? 'bg-black/5' : 'bg-gradient-to-br from-primary via-coral to-accent'}`}>
+                    {study.logo ? (
+                      <>
+                        {/* Blurred Background Layer for Seamless Transition */}
+                        <div
+                          className="absolute inset-0 opacity-50 blur-xl scale-150 transform"
+                          style={{
+                            backgroundImage: `url(${study.logo})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
+                        />
+                        {/* Main Logo in Circle */}
+                        <div className="relative z-10 w-20 h-20 rounded-full bg-white shadow-lg overflow-hidden flex items-center justify-center">
+                          <img
+                            src={study.logo}
+                            alt={caseStudyNames[study.slug][language]}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </>
+                    ) : (
+                      <TrendingUp className="h-12 w-12 text-white opacity-80" />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
 
@@ -96,12 +118,14 @@ export default function Portfolio() {
                       <h3 className="text-2xl font-display font-bold mb-2 group-hover:text-primary transition-colors">
                         {caseStudyNames[study.slug][language]}
                       </h3>
-                      <p className="text-sm text-muted-foreground">{study.category}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {language === 'ar' && study.categoryAr ? study.categoryAr : study.category}
+                      </p>
                     </div>
 
                     {/* Metrics */}
                     <div className="space-y-2">
-                      {study.metrics.map((metric, idx) => (
+                      {(language === 'ar' && study.metricsAr ? study.metricsAr : study.metrics).map((metric, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-sm">
                           <div className="w-2 h-2 rounded-full bg-primary" />
                           <span className="text-foreground/80">{metric}</span>

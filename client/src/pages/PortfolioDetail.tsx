@@ -34,10 +34,10 @@ const caseStudyDetails: Record<string, any> = {
         position: 'Director of Operations',
       },
       technologies: ['WhatsApp Business API', 'Facebook Messenger', 'Web Chat', 'CRM Integration', 'Arabic NLP'],
-      image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=80',
+      image: '/images/qadroon-volunteer.png',
     },
     ar: {
-      challenge: 'احتاجت مؤسسة قدرون إلى التعامل مع آلاف الاستفسارات من ذوي الاحتياجات الخاصة وعائلاتهم بكفاءة مع الحفاظ على ردود عالية الجودة ومتعاطفة.',
+      challenge: 'احتاجت مؤسسة قادرون إلى التعامل مع آلاف الاستفسارات من ذوي الاحتياجات الخاصة وعائلاتهم بكفاءة مع الحفاظ على ردود عالية الجودة ومتعاطفة.',
       solution: 'تم تطبيق DK-OctoBot مع تدريب متخصص للتعامل مع الاستفسارات الحساسة، ودعم متعدد القنوات (واتساب، فيسبوك، الموقع الإلكتروني)، والتكامل مع نظام إدارة الحالات الخاص بهم.',
       results: [
         'انخفض وقت الاستجابة من 4 ساعات إلى أقل من ثانيتين',
@@ -52,7 +52,7 @@ const caseStudyDetails: Record<string, any> = {
         position: 'مديرة العمليات',
       },
       technologies: ['واجهة برمجة تطبيقات واتساب للأعمال', 'فيسبوك ماسنجر', 'دردشة الويب', 'تكامل CRM', 'معالجة اللغة العربية الطبيعية'],
-      image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=80',
+      image: '/images/qadroon-volunteer.png',
     },
   },
   'hira-learning': {
@@ -129,24 +129,24 @@ export default function PortfolioDetail() {
         image={details.image}
       />
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background" />
-        
+
         <div className="container relative">
-          <div className="max-w-5xl mx-auto space-y-6">
+          <div className="max-w-5xl mx-auto flex flex-col gap-6 items-start">
             {/* Back Button */}
             <Link href={`/${language}/portfolio`}>
               <a className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                <ArrowLeft className="h-4 w-4" />
-                {language === 'en' ? 'Back to Portfolio' : 'العودة إلى المحفظة'}
+                <ArrowLeft className={`h-4 w-4 ${language === 'ar' ? 'rotate-180' : ''}`} />
+                {language === 'en' ? 'Back to Portfolio' : 'أعمالنا'}
               </a>
             </Link>
 
             {/* Category */}
             <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-              {caseStudy.category}
+              {language === 'ar' && caseStudy.categoryAr ? caseStudy.categoryAr : caseStudy.category}
             </div>
 
             {/* Title */}

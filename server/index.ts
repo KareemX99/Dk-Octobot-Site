@@ -4,6 +4,7 @@ import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
 import nodemailer from "nodemailer";
+import fs from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -222,7 +223,12 @@ async function startServer() {
 
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {
-    res.sendFile(path.join(staticPath, "index.html"));
+    const indexPath = path.join(staticPath, "index.html");
+    if (fs.existsSync(indexPath)) {
+      res.sendFile(indexPath);
+    } else {
+      res.status(404).send("Frontend build not found. If in development, ensure Vite server is running on port 3000.");
+    }
   });
 
   const port = process.env.PORT || 3001;

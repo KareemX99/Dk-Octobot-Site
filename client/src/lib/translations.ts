@@ -31,6 +31,8 @@ export interface Translations {
     multiLanguageDesc: string;
     fullControl: string;
     fullControlDesc: string;
+    visualTitle: string;
+    visualDescription: string;
   };
   metrics: {
     conversion: string;
@@ -90,6 +92,8 @@ export const translations: Record<Language, Translations> = {
       multiLanguageDesc: 'Arabic & English with cultural adaptation',
       fullControl: 'Full Control',
       fullControlDesc: 'Visual flows and guardrails for your brand',
+      visualTitle: 'Intelligent Automation for Modern Business',
+      visualDescription: 'Our AI-powered platform seamlessly integrates with your existing workflows, providing intelligent automation that adapts to your business needs. From customer inquiries to sales conversions, every interaction is optimized for success.',
     },
     metrics: {
       conversion: 'Conversion',
@@ -147,6 +151,8 @@ export const translations: Record<Language, Translations> = {
       multiLanguageDesc: 'العربية والإنجليزية مع التكيف الثقافي',
       fullControl: 'تحكم كامل',
       fullControlDesc: 'تدفقات مرئية وضوابط لعلامتك التجارية',
+      visualTitle: 'أتمتة ذكية للأعمال الحديثة',
+      visualDescription: 'منصتنا المدعومة بالذكاء الاصطناعي تتكامل بسلاسة مع سير عملك الحالي، وتوفر أتمتة ذكية تتكيف مع احتياجات عملك. من استفسارات العملاء إلى تحويلات المبيعات، كل تفاعل مُحسّن لتحقيق النجاح.',
     },
     metrics: {
       conversion: 'معدل التحويل',
