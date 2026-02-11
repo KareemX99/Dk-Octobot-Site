@@ -97,6 +97,7 @@ export const caseStudies = [
     metrics: ['10K+ Annual Trainees', '85% Customer Growth'],
     categoryAr: 'شركة برمجيات',
     metricsAr: ['+10 آلاف متدرب سنوياً', '85% نمو العملاء'],
+    logo: '/images/smart-technology-logo.png',
   },
   {
     slug: 'outbox-places',
@@ -104,6 +105,7 @@ export const caseStudies = [
     metrics: ['+85% Bookings', '15k+ Happy Travelers'],
     categoryAr: 'وكالة سفر',
     metricsAr: ['+85% حجوزات', '+15 ألف مسافر سعيد'],
+    logo: '/images/outbox-places-logo.jpg',
   },
   {
     slug: 'mps-academy',
@@ -111,6 +113,7 @@ export const caseStudies = [
     metrics: ['+90% Higher Tracking Efficiency', '5k+ Teacher'],
     categoryAr: 'شركة برمجيات',
     metricsAr: ['+90% كفاءة تتبع أعلى', '+5 آلاف معلم'],
+    logo: '/images/mps-academy-logo.jpg',
   },
   {
     slug: 'f-brakes',
@@ -118,6 +121,7 @@ export const caseStudies = [
     metrics: ['+75% growth in new customers', '4.9 Rating'],
     categoryAr: 'متجر قطع غيار سيارات',
     metricsAr: ['+75% نمو في العملاء الجدد', 'تقييم 4.9'],
+    logo: '/images/fbrakes-logo.jpg',
   },
   {
     slug: 'focus-ix',
@@ -125,6 +129,7 @@ export const caseStudies = [
     metrics: ['+97% Sales', '+1,200 monthly successful orders'],
     categoryAr: 'شركة توريدات',
     metricsAr: ['+97% مبيعات', '+1,200 طلب ناجح شهرياً'],
+    logo: '/images/focus-ix-logo.jpg',
   },
   {
     slug: 'healthy-dental',
@@ -132,6 +137,7 @@ export const caseStudies = [
     metrics: ['+90% faster appointment scheduling', '500+ beautiful new smiles'],
     categoryAr: 'طب أسنان عام',
     metricsAr: ['+90% سرعة في حجز المواعيد', '+500 ابتسامة جديدة جميلة'],
+    logo: '/images/healthy-dental-logo.png',
   },
 ];
 
