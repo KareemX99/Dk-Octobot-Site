@@ -147,6 +147,8 @@ export default function Portfolio() {
       </section>
 
       {/* Success Visual */}
+      {/* Problem & Solution Visuals */}
+      {/* Success Visual */}
       <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -161,11 +163,11 @@ export default function Portfolio() {
               </p>
             </div>
 
-            <div className="relative animate-in fade-in slide-in-from-right-8 duration-1000 delay-300">
+            <div className="relative animate-in fade-in slide-in-from-right-8 duration-1000 delay-300 flex justify-center">
               <img
-                src="https://private-us-east-1.manuscdn.com/sessionFile/kvk8t54dYp8FqVkMpydns7/sandbox/t1480D5Ow1AqYUzbtDiEBK-img-4_1770324862000_na1fn_c3VjY2Vzcy1ncm93dGg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUva3ZrOHQ1NGRZcDhGcVZrTXB5ZG5zNy9zYW5kYm94L3QxNDgwRDVPdzFBcVlVemJ0RGlFQkstaW1nLTRfMTc3MDMyNDg2MjAwMF9uYTFmbl9jM1ZqWTJWemN5MW5jbTkzZEdnLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=In1De7-n3SLpnOrPHAa~PPMj70tjkVaW64qpL4KPifcOJOn9sLvULyYKG~0PSvohunJ14JfUFueyFMbIeKRTBhXw3gUg~gYiQb2nvXPq09X-K0YhoKQvt9LHW5Zu98-eppulC3x6t~eLdXdf1uFlEY99P9cPeLEFjrLr5HrtFB~paW2E8u2T7m0OZZ3vqX-~6KtG6wW9z~GAX0bdloVpiNyIrVsUYzbLZX-v0XOgNMjDLOp~a~BUj2rMqt2uFxwa1veB74Sx0GaQJV~EpHT7NpmF~4ZyV1RyLDPVal~PMPQj4c~JICgm4inYfkTXtP6uWtExC6vpcyBKCNg-jLKSLg__"
-                alt="Success and Growth"
-                className="w-full h-auto rounded-3xl shadow-organic-lg"
+                src="/images/promo-message.png"
+                alt="Message that might lose a deal"
+                className="w-auto h-auto max-h-[500px] rounded-3xl shadow-organic-lg object-contain mx-auto"
               />
             </div>
           </div>
