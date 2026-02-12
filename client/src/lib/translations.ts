@@ -65,7 +65,7 @@ export const translations: Record<Language, Translations> = {
     nav: {
       features: 'Features',
       industries: 'Industries',
-      portfolio: 'Portfolio',
+      portfolio: 'Success Stories',
       pricing: 'Pricing',
       about: 'About',
       contact: 'Contact',
@@ -124,7 +124,7 @@ export const translations: Record<Language, Translations> = {
     nav: {
       features: 'المميزات',
       industries: 'القطاعات',
-      portfolio: 'أعمالنا',
+      portfolio: 'قصص النجاح',
       pricing: 'الأسعار',
       about: 'من نحن',
       contact: 'تواصل معنا',
