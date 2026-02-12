@@ -74,7 +74,7 @@ export default function BlogPost() {
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Back Button */}
             <Link href={`/${language}/blog`}>
-              <a className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <a className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border/50 text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/30 hover:shadow-tech transition-all duration-300">
                 <ArrowLeft className="h-4 w-4" />
                 {language === 'en' ? 'Back to Blog' : 'العودة إلى المدونة'}
               </a>

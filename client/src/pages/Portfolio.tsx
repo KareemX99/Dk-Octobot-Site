@@ -152,8 +152,8 @@ function CategoryCard({
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${idx === currentIndex
-                  ? 'bg-primary w-4'
-                  : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                ? 'bg-primary w-4'
+                : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
                 }`}
               aria-label={`Go to client ${idx + 1}`}
             />
@@ -186,10 +186,7 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-              <Sparkles className="h-4 w-4" />
-              {language === 'en' ? '22+ Success Stories' : '+22 قصة نجاح'}
-            </div>
+
             <h1 className="text-4xl md:text-5xl font-display font-bold">
               <span className="bg-gradient-to-r from-primary via-cyan to-accent bg-clip-text text-transparent">
                 {language === 'en' ? 'Success Stories' : 'قصص النجاح'}
@@ -204,30 +201,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Quick Stats - Compact Strip */}
-      <section className="py-8 bg-gradient-to-r from-primary/8 via-cyan/8 to-accent/8">
-        <div className="container">
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {[
-              { value: '22+', label: language === 'en' ? 'Success Stories' : 'قصة نجاح', color: 'text-primary' },
-              { value: '95%', label: language === 'en' ? 'Avg. Improvement' : 'متوسط التحسين', color: 'text-cyan' },
-              { value: '8+', label: language === 'en' ? 'Industries' : 'قطاعات', color: 'text-accent' },
-              { value: '24/7', label: language === 'en' ? 'Support' : 'دعم', color: 'text-primary' },
-            ].map((stat, i) => (
-              <motion.div
-                key={i}
-                className="text-center"
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.08 * i }}
-              >
-                <div className={`text-2xl md:text-3xl font-display font-bold ${stat.color}`}>{stat.value}</div>
-                <div className="text-xs text-muted-foreground mt-0.5">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Category Grid */}
       <section className="py-14 md:py-20">
