@@ -38,7 +38,7 @@ export default function HeroChatDemo() {
     // Initial bot greeting
     useEffect(() => {
         const greeting = language === 'ar'
-            ? "أهلاً وسهلاً! 👋 أنا أكتوبوت، تحب أساعدك في إيه النهاردة؟"
+            ? "خليك سابق الكل.. خليك مع أكــتــبــوت👋"
             : "Hello! 👋 Welcome to OctoBot. How can I help you today?";
 
         setMessages([{ id: 1, text: greeting, isBot: true }]);
