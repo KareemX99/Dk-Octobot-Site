@@ -235,7 +235,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    port: 3000,
+    port: 3060,
     strictPort: false, // Will find next available port if 3000 is busy
     host: true,
     allowedHosts: [
@@ -244,12 +244,13 @@ export default defineConfig({
       ".manus-asia.computer",
       ".manuscomputer.ai",
       ".manusvm.computer",
+      "octobot.it.com",
       "localhost",
       "127.0.0.1",
     ],
     proxy: {
       "/api": {
-        target: "http://localhost:3001",
+        target: "http://localhost:3061",
         changeOrigin: true,
       },
     },

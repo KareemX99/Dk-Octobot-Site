@@ -107,8 +107,6 @@ function App() {
             <Toaster />
             <ScrollToTop />
             <Router />
-            <LiveChatDemo />
-
           </TooltipProvider>
         </LanguageProvider>
       </ThemeProvider>

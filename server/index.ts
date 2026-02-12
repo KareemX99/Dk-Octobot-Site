@@ -107,6 +107,7 @@ async function startServer() {
   app.post("/api/chat", async (req, res) => {
     try {
       const { message, sessionId } = req.body;
+      console.log("[Chat] Received message:", message, "sessionId:", sessionId);
 
       // Basic validation
       if (!message) {
@@ -118,30 +119,50 @@ async function startServer() {
 
       // Check if n8n webhook is configured
       const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
+      console.log("[Chat] N8N_WEBHOOK_URL:", n8nWebhookUrl);
       if (!n8nWebhookUrl) {
-        console.error("N8N_WEBHOOK_URL not configured!");
+        console.error("[Chat] N8N_WEBHOOK_URL not configured!");
         return res.status(500).json({
           success: false,
           response: "عذراً، الخدمة غير متاحة حالياً. جرب تاني بعدين! 🙏",
         });
       }
 
+      const payload = {
+        message,
+        sessionId: sessionId || `session_${Date.now()}`,
+        timestamp: new Date().toISOString(),
+      };
+      console.log("[Chat] Sending to n8n:", JSON.stringify(payload));
+
       // Forward message to n8n webhook
       const n8nResponse = await fetch(n8nWebhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message,
-          sessionId: sessionId || `session_${Date.now()}`,
-          timestamp: new Date().toISOString(),
-        }),
+        body: JSON.stringify(payload),
       });
+
+      console.log("[Chat] n8n response status:", n8nResponse.status);
 
       if (!n8nResponse.ok) {
         throw new Error(`n8n responded with status ${n8nResponse.status}`);
       }
 
-      const n8nData = await n8nResponse.json();
+      // Safely parse response - handle empty or non-JSON responses
+      const responseText = await n8nResponse.text();
+      console.log("[Chat] n8n response body:", responseText);
+      let n8nData: any = {};
+
+      if (responseText && responseText.trim()) {
+        try {
+          n8nData = JSON.parse(responseText);
+        } catch {
+          // If response is plain text, use it as the response message
+          n8nData = { response: responseText };
+        }
+      }
+
+      console.log("[Chat] Parsed n8n data:", JSON.stringify(n8nData));
 
       return res.status(200).json({
         success: true,
@@ -149,7 +170,7 @@ async function startServer() {
         image: n8nData.image || null,
       });
     } catch (error) {
-      console.error("Error in chat endpoint:", error);
+      console.error("[Chat] ERROR:", error);
       return res.status(500).json({
         success: false,
         response: "حصل مشكلة في الاتصال. جرب تاني! 🔄",
@@ -196,7 +217,17 @@ async function startServer() {
         throw new Error(`n8n responded with status ${n8nResponse.status}`);
       }
 
-      const n8nData = await n8nResponse.json();
+      // Safely parse response - handle empty or non-JSON responses
+      const responseText = await n8nResponse.text();
+      let n8nData: any = {};
+
+      if (responseText && responseText.trim()) {
+        try {
+          n8nData = JSON.parse(responseText);
+        } catch {
+          n8nData = { response: responseText };
+        }
+      }
 
       return res.status(200).json({
         success: true,
@@ -231,7 +262,7 @@ async function startServer() {
     }
   });
 
-  const port = process.env.PORT || 3001;
+  const port = process.env.PORT || 3061;
 
   server.listen(port, () => {
     console.log(`Server running on http://localhost:${port}/`);
