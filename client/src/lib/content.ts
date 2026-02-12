@@ -139,6 +139,55 @@ export const caseStudies = [
     metricsAr: ['+90% سرعة في حجز المواعيد', '+500 ابتسامة جديدة جميلة'],
     logo: '/images/healthy-dental-logo.png',
   },
+  {
+    slug: 'egy-bird-tours',
+    category: 'Travel agency',
+    metrics: ['+80% Bookings', '10K+ Happy Travelers'],
+    categoryAr: 'وكالة سفر',
+    metricsAr: ['+80% حجوزات', '+10 آلاف مسافر سعيد'],
+    logo: '/images/egy-bird-tours-logo.jpg',
+  },
+  {
+    slug: 'codepill-academy',
+    category: 'Education',
+    metrics: ['+60% Student Growth', '1K+ Future Developers'],
+    categoryAr: 'التعليم',
+    metricsAr: ['+60% نمو الطلاب', '+1000 مبرمج مستقبلي'],
+    logo: '/images/codepill-academy-logo.jpg',
+    logoBg: 'bg-[#e63946]',
+  },
+  {
+    slug: 'epico-chemicals',
+    category: 'Agricultural Raw Materials',
+    metrics: ['+70% Sales Growth', '500+ Satisfied Clients'],
+    categoryAr: 'مواد خام زراعية',
+    metricsAr: ['+70% نمو في المبيعات', '+500 عميل راضي'],
+    logo: '/images/epico-chemicals-logo.jpg',
+  },
+  {
+    slug: 'lam7',
+    category: 'Car Showroom',
+    metrics: ['+85% Sales', '+250K Clients'],
+    categoryAr: 'معرض سيارات',
+    metricsAr: ['+85% مبيعات', '+250 ألف عميل'],
+    logo: '/images/lam7-logo.jpg',
+  },
+  {
+    slug: 'folo',
+    category: 'Men\'s Clothing Store',
+    metrics: ['+92% Sales Growth', '1000+ Satisfied Clients'],
+    categoryAr: 'متجر ملابس رجالي',
+    metricsAr: ['+92% نمو مبيعات', '+1000 عميل راضي'],
+    logo: '/images/folo-logo.jpg',
+  },
+  {
+    slug: 'dr-salah-sharawy',
+    category: 'Immunity & Allergy Center',
+    metrics: ['+5K Patients', 'Specialized Care'],
+    categoryAr: 'مركز مناعة وحساسية',
+    metricsAr: ['+5000 مريض', 'رعاية متخصصة'],
+    logo: '/images/dr-salah-sharawy-logo.jpg',
+  },
 ];
 
 export const caseStudyNames: Record<string, Record<Language, string>> = {
@@ -151,6 +200,12 @@ export const caseStudyNames: Record<string, Record<Language, string>> = {
   'f-brakes': { en: 'F.Brakes', ar: 'إف بريكس' },
   'focus-ix': { en: 'Focus ix', ar: 'فوكس إكس' },
   'healthy-dental': { en: 'Healthy Dental Clinic', ar: 'عيادة هيلثي لطب الأسنان' },
+  'egy-bird-tours': { en: 'Egy Bird Tours', ar: 'ايجي بيرد تورز' },
+  'codepill-academy': { en: 'CodePill Academy', ar: 'CodePill Academy' },
+  'epico-chemicals': { en: 'EPICO Chemicals', ar: 'EPICO Chemicals' },
+  'lam7': { en: 'Lam7', ar: 'لمح لتسويق السيارات' },
+  'folo': { en: 'FOLO', ar: 'FOLO' },
+  'dr-salah-sharawy': { en: 'Dr. Salah Sharawy', ar: 'د. صلاح شعراوي' },
 };
 
 // Detailed Industry Data

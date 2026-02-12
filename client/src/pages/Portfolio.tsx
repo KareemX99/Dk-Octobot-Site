@@ -6,7 +6,7 @@
  * - Staggered entrance animations via framer-motion
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useCallback } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -32,6 +32,21 @@ function getCategoryFilters(language: 'en' | 'ar') {
 export default function Portfolio() {
   const { language, t } = useLanguage();
   const [activeFilter, setActiveFilter] = useState('all');
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const handleFilterClick = useCallback((key: string) => {
+    setActiveFilter(key);
+    // Auto-scroll the clicked button into view on mobile
+    const container = scrollRef.current;
+    if (!container) return;
+    const btn = container.querySelector(`[data-filter-key="${key}"]`) as HTMLElement | null;
+    if (btn) {
+      const containerRect = container.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      const scrollLeft = btn.offsetLeft - containerRect.width / 2 + btnRect.width / 2;
+      container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    }
+  }, []);
 
   const filters = useMemo(() => getCategoryFilters(language), [language]);
 
@@ -71,7 +86,7 @@ export default function Portfolio() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
               <Sparkles className="h-4 w-4" />
-              {language === 'en' ? '13+ Success Stories' : '+13 قصة نجاح'}
+              {language === 'en' ? '19+ Success Stories' : '+19 قصة نجاح'}
             </div>
             <h1 className="text-5xl md:text-6xl font-display font-bold">
               <span className="bg-gradient-to-r from-primary via-cyan to-accent bg-clip-text text-transparent">
@@ -92,7 +107,7 @@ export default function Portfolio() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: '13+', label: language === 'en' ? 'Success Stories' : 'قصة نجاح', color: 'text-primary' },
+              { value: '19+', label: language === 'en' ? 'Success Stories' : 'قصة نجاح', color: 'text-primary' },
               { value: '95%', label: language === 'en' ? 'Avg. Improvement' : 'متوسط التحسين', color: 'text-cyan' },
               { value: '8+', label: language === 'en' ? 'Industries' : 'قطاعات', color: 'text-accent' },
               { value: '24/7', label: language === 'en' ? 'Support' : 'دعم', color: 'text-primary' },
@@ -115,22 +130,45 @@ export default function Portfolio() {
       {/* Filter Tabs + Case Studies Grid */}
       <section className="py-20">
         <div className="container">
-          {/* Filter Tabs */}
+          {/* Filter Tabs - Modern Animated */}
           <motion.div
-            className="flex flex-wrap justify-center gap-3 mb-14"
+            className="relative mb-8 md:mb-14"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {filters.map((f) => (
-              <button
-                key={f.key}
-                onClick={() => setActiveFilter(f.key)}
-                className={`filter-tab ${activeFilter === f.key ? 'filter-tab-active' : 'text-muted-foreground'}`}
-              >
-                {f.label}
-              </button>
-            ))}
+            {/* Fade edges for mobile scroll hint */}
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent z-10 md:hidden" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
+
+            {/* Scrollable container */}
+            <div
+              ref={scrollRef}
+              className="flex overflow-x-auto scrollbar-hide gap-1.5 md:gap-2 py-2 px-6 md:px-0 md:flex-wrap md:justify-center"
+            >
+              {filters.map((f) => (
+                <button
+                  key={f.key}
+                  data-filter-key={f.key}
+                  onClick={() => handleFilterClick(f.key)}
+                  className={`relative shrink-0 px-4 py-2 md:px-5 md:py-2.5 rounded-full text-sm font-medium transition-colors duration-300 z-[1] ${activeFilter === f.key
+                    ? 'text-primary-foreground dark:text-white'
+                    : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                >
+                  {/* Animated background pill */}
+                  {activeFilter === f.key && (
+                    <motion.span
+                      layoutId="activeFilterPill"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-cyan shadow-lg shadow-primary/25"
+                      style={{ zIndex: -1 }}
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                  {f.label}
+                </button>
+              ))}
+            </div>
           </motion.div>
 
           {/* Cards Grid */}
@@ -149,8 +187,8 @@ export default function Portfolio() {
                     ease: [0.23, 1, 0.32, 1],
                   }}
                 >
-                  <Link href={`/${language}/portfolio/${study.slug}`}>
-                    <div className="group portfolio-card rounded-2xl overflow-hidden cursor-pointer h-full flex flex-col">
+                  <div>
+                    <div className="group portfolio-card rounded-2xl overflow-hidden h-full flex flex-col">
                       {/* Logo Header */}
                       <div className="relative h-36 flex items-center justify-center overflow-hidden logo-mesh">
                         {/* Decorative mesh dots */}
@@ -225,16 +263,10 @@ export default function Portfolio() {
                           })}
                         </div>
 
-                        {/* CTA */}
-                        <div className="flex items-center gap-2 text-primary font-medium text-sm pt-2 border-t border-border/50">
-                          <span className="group-hover:tracking-wide transition-all duration-300">
-                            {t.cta.viewCaseStudy}
-                          </span>
-                          <ArrowRight className="h-4 w-4 group-hover:translate-x-2 transition-transform duration-300" />
-                        </div>
+
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </motion.div>
               ))}
             </AnimatePresence>
