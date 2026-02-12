@@ -12,6 +12,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
+import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import { seoContent } from '@/lib/seo';
 import { ArrowRight, MessageCircle, Clock, TrendingUp, Zap, Shield, BarChart3, Sparkles, Globe } from 'lucide-react';
 import ParticlesBackground from '@/components/ParticlesBackground';
@@ -34,6 +35,7 @@ export default function Home() {
         description={seo.description}
         keywords={seo.keywords}
       />
+      <LocalBusinessSchema />
       <Navbar />
 
       {/* Hero Section */}
