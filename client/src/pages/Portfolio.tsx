@@ -86,7 +86,7 @@ export default function Portfolio() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
               <Sparkles className="h-4 w-4" />
-              {language === 'en' ? '19+ Success Stories' : '+19 قصة نجاح'}
+              {language === 'en' ? '22+ Success Stories' : '+22 قصة نجاح'}
             </div>
             <h1 className="text-5xl md:text-6xl font-display font-bold">
               <span className="bg-gradient-to-r from-primary via-cyan to-accent bg-clip-text text-transparent">
@@ -107,7 +107,7 @@ export default function Portfolio() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: '19+', label: language === 'en' ? 'Success Stories' : 'قصة نجاح', color: 'text-primary' },
+              { value: '22+', label: language === 'en' ? 'Success Stories' : 'قصة نجاح', color: 'text-primary' },
               { value: '95%', label: language === 'en' ? 'Avg. Improvement' : 'متوسط التحسين', color: 'text-cyan' },
               { value: '8+', label: language === 'en' ? 'Industries' : 'قطاعات', color: 'text-accent' },
               { value: '24/7', label: language === 'en' ? 'Support' : 'دعم', color: 'text-primary' },
@@ -137,37 +137,40 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Fade edges for mobile scroll hint */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent z-10 md:hidden" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
+            {/* Glassmorphism container */}
+            <div className="relative rounded-2xl bg-card/50 dark:bg-card/30 backdrop-blur-xl border border-border/50 p-2 md:p-3 shadow-sm">
+              {/* Fade edges for scroll hint */}
+              <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-card/80 dark:from-card/60 to-transparent z-10 rounded-l-2xl" />
+              <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-card/80 dark:from-card/60 to-transparent z-10 rounded-r-2xl" />
 
-            {/* Scrollable container */}
-            <div
-              ref={scrollRef}
-              className="flex overflow-x-auto scrollbar-hide gap-1.5 md:gap-2 py-2 px-6 md:px-0 md:flex-wrap md:justify-center"
-            >
-              {filters.map((f) => (
-                <button
-                  key={f.key}
-                  data-filter-key={f.key}
-                  onClick={() => handleFilterClick(f.key)}
-                  className={`relative shrink-0 px-4 py-2 md:px-5 md:py-2.5 rounded-full text-sm font-medium transition-colors duration-300 z-[1] ${activeFilter === f.key
-                    ? 'text-primary-foreground dark:text-white'
-                    : 'text-muted-foreground hover:text-foreground'
-                    }`}
-                >
-                  {/* Animated background pill */}
-                  {activeFilter === f.key && (
-                    <motion.span
-                      layoutId="activeFilterPill"
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-cyan shadow-lg shadow-primary/25"
-                      style={{ zIndex: -1 }}
-                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                  {f.label}
-                </button>
-              ))}
+              {/* Scrollable container - horizontal scroll on all viewports */}
+              <div
+                ref={scrollRef}
+                className="flex overflow-x-auto scrollbar-hide gap-1.5 py-1 px-8"
+              >
+                {filters.map((f) => (
+                  <button
+                    key={f.key}
+                    data-filter-key={f.key}
+                    onClick={() => handleFilterClick(f.key)}
+                    className={`relative shrink-0 px-4 py-2 md:px-5 md:py-2.5 rounded-xl text-[13px] md:text-sm font-medium transition-all duration-300 z-[1] whitespace-nowrap ${activeFilter === f.key
+                      ? 'text-white'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                      }`}
+                  >
+                    {/* Animated background pill */}
+                    {activeFilter === f.key && (
+                      <motion.span
+                        layoutId="activeFilterPill"
+                        className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary to-cyan shadow-lg shadow-primary/25"
+                        style={{ zIndex: -1 }}
+                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                      />
+                    )}
+                    {f.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </motion.div>
 

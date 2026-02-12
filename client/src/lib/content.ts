@@ -188,6 +188,30 @@ export const caseStudies = [
     metricsAr: ['+5000 مريض', 'رعاية متخصصة'],
     logo: '/images/dr-salah-sharawy-logo.jpg',
   },
+  {
+    slug: 'al-qamash',
+    category: 'Fabrics & Bridal Trousseau',
+    metrics: ['+1000 Brides', 'Premium Fabrics'],
+    categoryAr: 'أقمشة وتجهيز عرائس',
+    metricsAr: ['+1000 عروسة', 'أقمشة فاخرة'],
+    logo: '/images/al-qamash-logo.jpg',
+  },
+  {
+    slug: 'shahbander',
+    category: 'Online Store',
+    metrics: ['+15K Orders', 'Top Rated Store'],
+    categoryAr: 'متجر إلكتروني',
+    metricsAr: ['+15 ألف طلب', 'الأعلى تقييماً'],
+    logo: '/images/shahbander-logo.jpg',
+  },
+  {
+    slug: 'itc-egypt',
+    category: 'Credit & Financial Consulting',
+    metrics: ['Credit Score Repair', 'Financial Solutions'],
+    categoryAr: 'استشارات ائتمانية ومصرفية',
+    metricsAr: ['تصحيح الملف الائتماني', 'حلول تمويلية'],
+    logo: '/images/itc-egypt-logo.png',
+  },
 ];
 
 export const caseStudyNames: Record<string, Record<Language, string>> = {
@@ -206,6 +230,9 @@ export const caseStudyNames: Record<string, Record<Language, string>> = {
   'lam7': { en: 'Lam7', ar: 'لمح لتسويق السيارات' },
   'folo': { en: 'FOLO', ar: 'FOLO' },
   'dr-salah-sharawy': { en: 'Dr. Salah Sharawy', ar: 'د. صلاح شعراوي' },
+  'al-qamash': { en: 'Al-Qāmāsh', ar: 'ٱلْقَمَاشْ' },
+  'shahbander': { en: 'Shahbander', ar: 'شهبندر' },
+  'itc-egypt': { en: 'ITC Egypt', ar: 'ITC Egypt' },
 };
 
 // Detailed Industry Data
