@@ -6,11 +6,11 @@ export { blogPosts } from './blogData';
 export type { BlogPost } from './blogData';
 
 export const blogContent: Record<string, Record<Language, { title: string; excerpt: string; content: string }>> = {
-  'ai-customer-service-revolution-2026': {
+  'ai-customer-service-revolution-2025': {
     en: {
-      title: 'The Future of AI-Powered Customer Service in 2026',
+      title: 'The Future of AI-Powered Customer Service in 2025',
       excerpt: 'Discover how artificial intelligence is revolutionizing customer service and what businesses need to know to stay competitive.',
-      content: `# The Future of AI-Powered Customer Service in 2026
+      content: `# The Future of AI-Powered Customer Service in 2025
 
 Artificial Intelligence has transformed the landscape of customer service, offering businesses unprecedented opportunities to enhance customer experiences while reducing operational costs.
 
@@ -42,9 +42,9 @@ Advanced natural language processing allows chatbots to detect customer emotions
 The future of customer service is here, and it's powered by AI. Businesses that embrace this technology now will have a significant competitive advantage.`,
     },
     ar: {
-      title: 'ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2026',
+      title: 'ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2025',
       excerpt: 'اكتشف كيف يُحدث الذكاء الاصطناعي ثورة في خدمة العملاء وما تحتاج الشركات معرفته للبقاء تنافسية.',
-      content: `# ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2026
+      content: `# ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2025
 
 لقد غيّر الذكاء الاصطناعي مشهد خدمة العملاء، مما يوفر للشركات فرصًا غير مسبوقة لتحسين تجارب العملاء مع تقليل التكاليف التشغيلية.
 
@@ -412,11 +412,11 @@ Don't let language barriers limit your business growth. Embrace multilingual cha
 لا تدع حواجز اللغة تحد من نمو عملك.`,
     },
   },
-  'chatbot-best-practices-2026': {
+  'chatbot-best-practices-2025': {
     en: {
-      title: 'The Ultimate Guide to Chatbot Best Practices in 2026',
+      title: 'The Ultimate Guide to Chatbot Best Practices in 2025',
       excerpt: 'Master the art of chatbot design with these proven best practices for creating engaging, effective AI assistants.',
-      content: `# The Ultimate Guide to Chatbot Best Practices in 2026
+      content: `# The Ultimate Guide to Chatbot Best Practices in 2025
 
 Creating a successful chatbot requires more than just technology—it demands thoughtful design, continuous improvement, and a deep understanding of user needs.
 
@@ -493,9 +493,9 @@ User Intent → Context Analysis → Response Generation → Feedback Loop
 The best chatbots feel less like software and more like helpful colleagues.`,
     },
     ar: {
-      title: 'الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2026',
+      title: 'الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2025',
       excerpt: 'أتقن فن تصميم الشات بوت مع هذه الممارسات المثبتة لإنشاء مساعدين ذكاء اصطناعي جذابين وفعالين.',
-      content: `# الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2026
+      content: `# الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2025
 
 إنشاء شات بوت ناجح يتطلب أكثر من مجرد التكنولوجيا—إنه يتطلب تصميمًا مدروسًا وتحسينًا مستمرًا وفهمًا عميقًا لاحتياجات المستخدمين.
 
@@ -890,7 +890,7 @@ Guide users through a funnel directly in the DMs, from awareness to consideratio
 - Always offer a way to talk to a human.
 - Don't spam; only reply when spoken to (or triggered).
 
-Instagram DM Automation is the secret weapon of top influencers and brands in 2026.`,
+Instagram DM Automation is the secret weapon of top influencers and brands in 2025.`,
     },
     ar: {
       title: 'أتمتة الرسائل المباشرة على إنستغرام: حول إنستغرام إلى آلة مبيعات تعمل على مدار الساعة',
@@ -927,14 +927,14 @@ Instagram DM Automation is the secret weapon of top influencers and brands in 20
 - اعرض دائمًا طريقة للتحدث إلى إنسان.
 - لا ترسل رسائل عشوائية؛ رد فقط عند التحدث إليك (أو تشغيل التفاعل).
 
-أتمتة الرسائل المباشرة على إنستغرام هي السلاح السري لأهم المؤثرين والعلامات التجارية في 2026.`,
+أتمتة الرسائل المباشرة على إنستغرام هي السلاح السري لأهم المؤثرين والعلامات التجارية في 2025.`,
     },
   },
-  'customer-engagement-strategies-2026': {
+  'customer-engagement-strategies-2025': {
     en: {
-      title: 'Customer Engagement Strategies That Actually Work in 2026',
+      title: 'Customer Engagement Strategies That Actually Work in 2025',
       excerpt: 'Discover the engagement strategies that build loyalty, increase retention, and drive revenue in today\'s competitive market.',
-      content: `# Customer Engagement Strategies That Actually Work in 2026
+      content: `# Customer Engagement Strategies That Actually Work in 2025
 
 Engagement is the currency of the digital economy. In a world of infinite distractions, how do you keep customers connected to your brand?
 
@@ -964,12 +964,12 @@ Don't just look at "Likes". Look at:
 - User Generated Content created
 
 ## Summary
-The brands that win in 2026 aren't the ones with the loudest ads, but the ones with the deepest relationships.`,
+The brands that win in 2025 aren't the ones with the loudest ads, but the ones with the deepest relationships.`,
     },
     ar: {
-      title: 'استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2026',
+      title: 'استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2025',
       excerpt: 'اكتشف استراتيجيات التفاعل التي تبني الولاء وتزيد الاحتفاظ وتدفع الإيرادات في سوق اليوم التنافسي.',
-      content: `# استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2026
+      content: `# استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2025
 
 التفاعل هو عملة الاقتصاد الرقمي. في عالم مليء بالمشتتات اللانهائية، كيف تحافظ على ارتباط العملاء بعلامتك التجارية؟
 
@@ -999,7 +999,7 @@ The brands that win in 2026 aren't the ones with the loudest ads, but the ones w
 - المحتوى الذي ينشئه المستخدم
 
 ## ملخص
-العلامات التجارية التي تفوز في 2026 ليست تلك التي لديها أعلى الإعلانات صوتًا، بل تلك التي لديها أعمق العلاقات.`,
+العلامات التجارية التي تفوز في 2025 ليست تلك التي لديها أعلى الإعلانات صوتًا، بل تلك التي لديها أعمق العلاقات.`,
     },
   },
 };

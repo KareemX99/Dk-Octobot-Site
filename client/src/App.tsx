@@ -81,13 +81,6 @@ function Router() {
       <Route path="/en/security" component={Legal} />
       <Route path="/ar/security" component={Legal} />
 
-      {/* Placeholder routes */}
-      <Route path="/en/blog" component={Home} />
-      <Route path="/ar/blog" component={Home} />
-
-      <Route path="/en/careers" component={Home} />
-      <Route path="/ar/careers" component={Home} />
-
       {/* 404 */}
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

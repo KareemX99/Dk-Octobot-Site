@@ -13,10 +13,10 @@ import { useLocation } from 'wouter';
 export default function Legal() {
   const { language } = useLanguage();
   const [location] = useLocation();
-  
-  const pageType = location.includes('privacy') ? 'privacy' 
-    : location.includes('terms') ? 'terms' 
-    : 'security';
+
+  const pageType = location.includes('privacy') ? 'privacy'
+    : location.includes('terms') ? 'terms'
+      : 'security';
 
   const content = {
     privacy: {
@@ -156,11 +156,11 @@ export default function Legal() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
-        
+
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
             <h1 className="text-5xl md:text-6xl font-display font-bold">
@@ -169,7 +169,7 @@ export default function Legal() {
               </span>
             </h1>
             <p className="text-sm text-muted-foreground">
-              {language === 'en' ? 'Last updated: February 2026' : 'آخر تحديث: فبراير 2026'}
+              {language === 'en' ? 'Last updated: December 2025' : 'آخر تحديث: ديسمبر 2025'}
             </p>
           </div>
         </div>

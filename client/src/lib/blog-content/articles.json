@@ -1,20 +1,32 @@
 [
   {
     "id": "1",
-    "slug": "ai-customer-service-revolution-2026",
-    "titleEn": "The AI Customer Service Revolution: How Chatbots Are Transforming Business in 2026",
-    "titleAr": "ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2026",
-    "excerptEn": "Discover how AI-powered chatbots are revolutionizing customer service, reducing costs by 30%, and increasing customer satisfaction by 45%. Learn the latest trends and strategies for 2026.",
-    "excerptAr": "اكتشف كيف تُحدث روبوتات الدردشة المدعومة بالذكاء الاصطناعي ثورة في خدمة العملاء، وتقلل التكاليف بنسبة 30٪، وتزيد من رضا العملاء بنسبة 45٪. تعرف على أحدث الاتجاهات والاستراتيجيات لعام 2026.",
+    "slug": "ai-customer-service-revolution-2025",
+    "titleEn": "The AI Customer Service Revolution: How Chatbots Are Transforming Business in 2025",
+    "titleAr": "ثورة خدمة العملاء بالذكاء الاصطناعي: كيف تُحدث الشات بوتات تحولاً في الأعمال في 2025",
+    "excerptEn": "Discover how AI-powered chatbots are revolutionizing customer service, reducing costs by 30%, and increasing customer satisfaction by 45%. Learn the latest trends and strategies for 2025.",
+    "excerptAr": "اكتشف كيف تُحدث روبوتات الدردشة المدعومة بالذكاء الاصطناعي ثورة في خدمة العملاء، وتقلل التكاليف بنسبة 30٪، وتزيد من رضا العملاء بنسبة 45٪. تعرف على أحدث الاتجاهات والاستراتيجيات لعام 2025.",
     "category": "AI & Technology",
     "categoryAr": "الذكاء الاصطناعي والتكنولوجيا",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-02-01",
+    "publishDate": "2025-11-01",
     "readTime": 12,
     "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&h=630&fit=crop",
-    "tags": ["AI", "Customer Service", "Chatbots", "Business Automation", "Digital Transformation"],
-    "tagsAr": ["الذكاء الاصطناعي", "خدمة العملاء", "روبوتات الدردشة", "أتمتة الأعمال", "التحول الرقمي"],
+    "tags": [
+      "AI",
+      "Customer Service",
+      "Chatbots",
+      "Business Automation",
+      "Digital Transformation"
+    ],
+    "tagsAr": [
+      "الذكاء الاصطناعي",
+      "خدمة العملاء",
+      "روبوتات الدردشة",
+      "أتمتة الأعمال",
+      "التحول الرقمي"
+    ],
     "featured": true
   },
   {
@@ -28,11 +40,23 @@
     "categoryAr": "المبيعات والتسويق",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-28",
+    "publishDate": "2025-10-28",
     "readTime": 15,
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop",
-    "tags": ["Sales", "Conversion Optimization", "Marketing Strategy", "ROI", "E-commerce"],
-    "tagsAr": ["المبيعات", "تحسين التحويل", "استراتيجية التسويق", "عائد الاستثمار", "التجارة الإلكترونية"],
+    "tags": [
+      "Sales",
+      "Conversion Optimization",
+      "Marketing Strategy",
+      "ROI",
+      "E-commerce"
+    ],
+    "tagsAr": [
+      "المبيعات",
+      "تحسين التحويل",
+      "استراتيجية التسويق",
+      "عائد الاستثمار",
+      "التجارة الإلكترونية"
+    ],
     "featured": true
   },
   {
@@ -46,11 +70,23 @@
     "categoryAr": "استراتيجية الأعمال",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-25",
+    "publishDate": "2025-10-25",
     "readTime": 18,
     "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&h=630&fit=crop",
-    "tags": ["ROI", "Business Finance", "Cost Savings", "Investment", "Analytics"],
-    "tagsAr": ["عائد الاستثمار", "تمويل الأعمال", "توفير التكاليف", "الاستثمار", "التحليلات"],
+    "tags": [
+      "ROI",
+      "Business Finance",
+      "Cost Savings",
+      "Investment",
+      "Analytics"
+    ],
+    "tagsAr": [
+      "عائد الاستثمار",
+      "تمويل الأعمال",
+      "توفير التكاليف",
+      "الاستثمار",
+      "التحليلات"
+    ],
     "featured": true
   },
   {
@@ -64,11 +100,23 @@
     "categoryAr": "تكامل المنصات",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-22",
+    "publishDate": "2025-10-22",
     "readTime": 14,
     "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&h=630&fit=crop",
-    "tags": ["WhatsApp", "Messaging", "Automation", "Customer Communication", "Mobile Marketing"],
-    "tagsAr": ["واتساب", "المراسلة", "الأتمتة", "التواصل مع العملاء", "التسويق عبر الجوال"],
+    "tags": [
+      "WhatsApp",
+      "Messaging",
+      "Automation",
+      "Customer Communication",
+      "Mobile Marketing"
+    ],
+    "tagsAr": [
+      "واتساب",
+      "المراسلة",
+      "الأتمتة",
+      "التواصل مع العملاء",
+      "التسويق عبر الجوال"
+    ],
     "featured": false
   },
   {
@@ -82,11 +130,23 @@
     "categoryAr": "التسويق عبر وسائل التواصل الاجتماعي",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-20",
+    "publishDate": "2025-10-20",
     "readTime": 11,
     "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=630&fit=crop",
-    "tags": ["Facebook", "Messenger", "Social Media", "Lead Generation", "Conversion"],
-    "tagsAr": ["فيسبوك", "ماسنجر", "وسائل التواصل الاجتماعي", "توليد العملاء المحتملين", "التحويل"],
+    "tags": [
+      "Facebook",
+      "Messenger",
+      "Social Media",
+      "Lead Generation",
+      "Conversion"
+    ],
+    "tagsAr": [
+      "فيسبوك",
+      "ماسنجر",
+      "وسائل التواصل الاجتماعي",
+      "توليد العملاء المحتملين",
+      "التحويل"
+    ],
     "featured": false
   },
   {
@@ -100,29 +160,53 @@
     "categoryAr": "التسويق عبر وسائل التواصل الاجتماعي",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-18",
+    "publishDate": "2025-10-18",
     "readTime": 10,
     "image": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&h=630&fit=crop",
-    "tags": ["Instagram", "DM Automation", "Social Selling", "E-commerce", "Visual Marketing"],
-    "tagsAr": ["إنستغرام", "أتمتة الرسائل", "البيع الاجتماعي", "التجارة الإلكترونية", "التسويق المرئي"],
+    "tags": [
+      "Instagram",
+      "DM Automation",
+      "Social Selling",
+      "E-commerce",
+      "Visual Marketing"
+    ],
+    "tagsAr": [
+      "إنستغرام",
+      "أتمتة الرسائل",
+      "البيع الاجتماعي",
+      "التجارة الإلكترونية",
+      "التسويق المرئي"
+    ],
     "featured": false
   },
   {
     "id": "7",
-    "slug": "customer-engagement-strategies-2026",
-    "titleEn": "Customer Engagement Strategies That Actually Work in 2026",
-    "titleAr": "استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2026",
+    "slug": "customer-engagement-strategies-2025",
+    "titleEn": "Customer Engagement Strategies That Actually Work in 2025",
+    "titleAr": "استراتيجيات التفاعل مع العملاء التي تعمل فعلاً في 2025",
     "excerptEn": "Modern customers expect personalized, instant interactions. Discover the engagement strategies that build loyalty, increase retention, and drive revenue in today's competitive market.",
     "excerptAr": "يتوقع العملاء المعاصرون تفاعلات مخصصة وفورية. اكتشف استراتيجيات التفاعل التي تبني الولاء وتزيد الاحتفاظ وتدفع الإيرادات في سوق اليوم التنافسي.",
     "category": "Customer Experience",
     "categoryAr": "تجربة العملاء",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-15",
+    "publishDate": "2025-10-15",
     "readTime": 13,
     "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&h=630&fit=crop",
-    "tags": ["Customer Engagement", "Retention", "Loyalty", "CX", "Personalization"],
-    "tagsAr": ["التفاعل مع العملاء", "الاحتفاظ", "الولاء", "تجربة العملاء", "التخصيص"],
+    "tags": [
+      "Customer Engagement",
+      "Retention",
+      "Loyalty",
+      "CX",
+      "Personalization"
+    ],
+    "tagsAr": [
+      "التفاعل مع العملاء",
+      "الاحتفاظ",
+      "الولاء",
+      "تجربة العملاء",
+      "التخصيص"
+    ],
     "featured": false
   },
   {
@@ -136,29 +220,53 @@
     "categoryAr": "التعريب",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-01-12",
+    "publishDate": "2025-10-12",
     "readTime": 9,
     "image": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=1200&h=630&fit=crop",
-    "tags": ["Multilingual", "Arabic", "Localization", "Cultural Adaptation", "Middle East"],
-    "tagsAr": ["متعدد اللغات", "العربية", "التعريب", "التكيف الثقافي", "الشرق الأوسط"],
+    "tags": [
+      "Multilingual",
+      "Arabic",
+      "Localization",
+      "Cultural Adaptation",
+      "Middle East"
+    ],
+    "tagsAr": [
+      "متعدد اللغات",
+      "العربية",
+      "التعريب",
+      "التكيف الثقافي",
+      "الشرق الأوسط"
+    ],
     "featured": false
   },
   {
     "id": "9",
-    "slug": "chatbot-best-practices-2026",
-    "titleEn": "The Ultimate Guide to Chatbot Best Practices in 2026",
-    "titleAr": "الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2026",
+    "slug": "chatbot-best-practices-2025",
+    "titleEn": "The Ultimate Guide to Chatbot Best Practices in 2025",
+    "titleAr": "الدليل النهائي لأفضل ممارسات روبوتات الدردشة في 2025",
     "excerptEn": "Maximize your chatbot's effectiveness with these essential best practices. From personality design to seamless human handoff, we cover everything you need to know.",
     "excerptAr": "ضاعف فعالية روبوت الدردشة الخاص بك مع هذه الممارسات الأساسية. من تصميم الشخصية إلى التسليم السلس للبشر، نغطي كل ما تحتاج إلى معرفته.",
     "category": "Best Practices",
     "categoryAr": "أفضل الممارسات",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-02-10",
+    "publishDate": "2025-11-10",
     "readTime": 12,
     "image": "https://images.unsplash.com/photo-1558522195-e1a911476d1b?w=1200&h=630&fit=crop",
-    "tags": ["Chatbot", "Best Practices", "UX Design", "Customer Experience", "AI"],
-    "tagsAr": ["روبوت الدردشة", "أفضل الممارسات", "تصميم تجربة المستخدم", "تجربة العملاء", "الذكاء الاصطناعي"],
+    "tags": [
+      "Chatbot",
+      "Best Practices",
+      "UX Design",
+      "Customer Experience",
+      "AI"
+    ],
+    "tagsAr": [
+      "روبوت الدردشة",
+      "أفضل الممارسات",
+      "تصميم تجربة المستخدم",
+      "تجربة العملاء",
+      "الذكاء الاصطناعي"
+    ],
     "featured": false
   },
   {
@@ -172,11 +280,23 @@
     "categoryAr": "علم النفس وتجربة المستخدم",
     "author": "DK-OctoBot Team",
     "authorAr": "فريق DK-OctoBot",
-    "publishDate": "2026-02-15",
+    "publishDate": "2025-11-15",
     "readTime": 10,
     "image": "https://images.unsplash.com/photo-1507146426996-32f2e2b3dfb4?w=1200&h=630&fit=crop",
-    "tags": ["Psychology", "Chatbot", "UX", "User Engagement", "Conversational AI"],
-    "tagsAr": ["علم النفس", "روبوت الدردشة", "تجربة المستخدم", "تفاعل المستخدم", "الذكاء الاصطناعي للمحادثة"],
+    "tags": [
+      "Psychology",
+      "Chatbot",
+      "UX",
+      "User Engagement",
+      "Conversational AI"
+    ],
+    "tagsAr": [
+      "علم النفس",
+      "روبوت الدردشة",
+      "تجربة المستخدم",
+      "تفاعل المستخدم",
+      "الذكاء الاصطناعي للمحادثة"
+    ],
     "featured": false
   }
 ]

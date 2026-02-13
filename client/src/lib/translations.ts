@@ -117,7 +117,7 @@ export const translations: Record<Language, Translations> = {
       company: 'Company',
       legal: 'Policies & Terms',
       contact: 'Contact',
-      copyright: '© 2026 DK-OctoBot. All rights reserved.',
+      copyright: '© 2025 DK-OctoBot. All rights reserved.',
     },
   },
   ar: {
@@ -176,7 +176,7 @@ export const translations: Record<Language, Translations> = {
       company: 'الشركة',
       legal: 'السياسات والشروط',
       contact: 'تواصل',
-      copyright: '© 2026 DK-OctoBot. جميع الحقوق محفوظة.',
+      copyright: '© 2025 DK-OctoBot. جميع الحقوق محفوظة.',
     },
   },
 };

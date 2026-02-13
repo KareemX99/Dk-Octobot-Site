@@ -3,501 +3,578 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://octobot.it.com/en</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/features</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/features" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/features" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/features</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/features" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/features" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/pricing</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/pricing" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/pricing</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/pricing" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/pricing" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/about</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/about" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/about" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/about</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/about" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/about" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/contact</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/contact" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/contact</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/contact" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/faq</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/faq" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/faq" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/faq</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/faq" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/faq" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/logistics</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/logistics" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/logistics" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/logistics</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/logistics" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/logistics" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/healthcare</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/healthcare" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/healthcare" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/healthcare</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/healthcare" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/healthcare" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/customer-service</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/customer-service" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/customer-service" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/customer-service</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/customer-service" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/customer-service" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/inventory</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/inventory" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/inventory" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/inventory</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/inventory" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/inventory" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/hospitality</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/hospitality" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/hospitality" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/hospitality</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/hospitality" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/hospitality" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/banking</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/banking" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/banking" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/banking</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/banking" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/banking" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/ecommerce</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/ecommerce" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/ecommerce" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/ecommerce</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/ecommerce" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/ecommerce" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/industries/education</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/education" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/education" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/industries/education</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/industries/education" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/industries/education" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/qadroon-foundation</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/qadroon-foundation" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/qadroon-foundation" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/qadroon-foundation</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/qadroon-foundation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/qadroon-foundation" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/hira-learning</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/hira-learning" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/hira-learning" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/hira-learning</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/hira-learning" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/hira-learning" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/i-byco</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/i-byco" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/i-byco" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/i-byco</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/i-byco" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/i-byco" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/smart-technology</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/smart-technology" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/smart-technology" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/smart-technology</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/smart-technology" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/smart-technology" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/outbox-places</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/outbox-places" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/outbox-places" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/outbox-places</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/outbox-places" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/outbox-places" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/mps-academy</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/mps-academy" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/mps-academy" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/mps-academy</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/mps-academy" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/mps-academy" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/f-brakes</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/f-brakes" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/f-brakes" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/f-brakes</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/f-brakes" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/f-brakes" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/focus-ix</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/focus-ix" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/focus-ix" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/portfolio/focus-ix</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/focus-ix" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/focus-ix" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/portfolio/healthy-dental</loc>
-    <lastmod>2026-02-05T21:49:14.770Z</lastmod>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/healthy-dental" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/healthy-dental" />
+  </url>
+  <url>
+    <loc>https://octobot.it.com/ar/portfolio/healthy-dental</loc>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/portfolio/healthy-dental" />
-  </url>
-  <!-- Blog Articles (English) -->
-  <url>
-    <loc>https://octobot.it.com/en/blog/ai-customer-service-revolution-2026</loc>
-    <lastmod>2026-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/ai-customer-service-revolution-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/portfolio/healthy-dental" />
   </url>
   <url>
-    <loc>https://octobot.it.com/ar/blog/ai-customer-service-revolution-2026</loc>
-    <lastmod>2026-02-01</lastmod>
+    <loc>https://octobot.it.com/en/blog/ai-customer-service-revolution-2025</loc>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/ai-customer-service-revolution-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/ai-customer-service-revolution-2025" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/ai-customer-service-revolution-2025" />
+  </url>
+  <url>
+    <loc>https://octobot.it.com/ar/blog/ai-customer-service-revolution-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/ai-customer-service-revolution-2025" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/ai-customer-service-revolution-2025" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/10-proven-strategies-boost-sales-chatbots</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/10-proven-strategies-boost-sales-chatbots" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/10-proven-strategies-boost-sales-chatbots" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/10-proven-strategies-boost-sales-chatbots</loc>
-    <lastmod>2026-01-28</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/10-proven-strategies-boost-sales-chatbots" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/10-proven-strategies-boost-sales-chatbots" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/chatbot-roi-calculator-guide</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/chatbot-roi-calculator-guide" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/chatbot-roi-calculator-guide" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/chatbot-roi-calculator-guide</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/chatbot-roi-calculator-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/chatbot-roi-calculator-guide" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/whatsapp-business-automation-guide</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/whatsapp-business-automation-guide" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/whatsapp-business-automation-guide" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/whatsapp-business-automation-guide</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2025-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/whatsapp-business-automation-guide" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/whatsapp-business-automation-guide" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/facebook-messenger-marketing-strategies</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/facebook-messenger-marketing-strategies" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/facebook-messenger-marketing-strategies" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/facebook-messenger-marketing-strategies</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/facebook-messenger-marketing-strategies" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/facebook-messenger-marketing-strategies" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/instagram-dm-automation-sales</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2025-10-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/instagram-dm-automation-sales" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/instagram-dm-automation-sales" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/instagram-dm-automation-sales</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2025-10-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/instagram-dm-automation-sales" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/instagram-dm-automation-sales" />
   </url>
   <url>
-    <loc>https://octobot.it.com/en/blog/customer-engagement-strategies-2026</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://octobot.it.com/en/blog/customer-engagement-strategies-2025</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/customer-engagement-strategies-2026" />
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/customer-engagement-strategies-2025" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/customer-engagement-strategies-2025" />
   </url>
   <url>
-    <loc>https://octobot.it.com/ar/blog/customer-engagement-strategies-2026</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://octobot.it.com/ar/blog/customer-engagement-strategies-2025</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/customer-engagement-strategies-2026" />
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/customer-engagement-strategies-2025" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/customer-engagement-strategies-2025" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/multilingual-chatbot-best-practices</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/multilingual-chatbot-best-practices" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/multilingual-chatbot-best-practices" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/multilingual-chatbot-best-practices</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2025-10-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/multilingual-chatbot-best-practices" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/multilingual-chatbot-best-practices" />
   </url>
   <url>
-    <loc>https://octobot.it.com/en/blog/chatbot-best-practices-2026</loc>
-    <lastmod>2026-02-10</lastmod>
+    <loc>https://octobot.it.com/en/blog/chatbot-best-practices-2025</loc>
+    <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/chatbot-best-practices-2026" />
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/chatbot-best-practices-2025" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/chatbot-best-practices-2025" />
   </url>
   <url>
-    <loc>https://octobot.it.com/ar/blog/chatbot-best-practices-2026</loc>
-    <lastmod>2026-02-10</lastmod>
+    <loc>https://octobot.it.com/ar/blog/chatbot-best-practices-2025</loc>
+    <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/chatbot-best-practices-2026" />
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/chatbot-best-practices-2025" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/chatbot-best-practices-2025" />
   </url>
   <url>
     <loc>https://octobot.it.com/en/blog/psychology-of-chatbots</loc>
-    <lastmod>2026-02-15</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/psychology-of-chatbots" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/psychology-of-chatbots" />
   </url>
   <url>
     <loc>https://octobot.it.com/ar/blog/psychology-of-chatbots</loc>
-    <lastmod>2026-02-15</lastmod>
+    <lastmod>2025-11-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://octobot.it.com/ar/blog/psychology-of-chatbots" />
     <xhtml:link rel="alternate" hreflang="en" href="https://octobot.it.com/en/blog/psychology-of-chatbots" />
   </url>
 </urlset>
-
