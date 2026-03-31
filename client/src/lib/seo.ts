@@ -3,12 +3,12 @@ import { Language } from './i18n';
 export const seoContent: Record<string, Record<Language, { title: string; description: string; keywords: string }>> = {
   home: {
     en: {
-      title: 'AI-Powered Customer Service & Sales Automation',
+      title: 'DK-OctoBot',
       description: 'DK-OctoBot provides intelligent chatbot solutions for customer service automation across multiple platforms. Boost sales, reduce response time, and improve customer satisfaction with AI.',
       keywords: 'AI chatbot, customer service automation, sales automation, WhatsApp bot, Facebook Messenger bot, intelligent assistant, business automation',
     },
     ar: {
-      title: 'خدمة عملاء وأتمتة مبيعات مدعومة بالذكاء الاصطناعي',
+      title: 'DK-OctoBot',
       description: 'يوفر DK-OctoBot حلول شات بوت ذكية لأتمتة خدمة العملاء عبر منصات متعددة. عزز المبيعات، قلل وقت الاستجابة، وحسن رضا العملاء بالذكاء الاصطناعي.',
       keywords: 'شات بوت ذكي، أتمتة خدمة العملاء، أتمتة المبيعات، بوت واتساب، بوت فيسبوك ماسنجر، مساعد ذكي، أتمتة الأعمال',
     },

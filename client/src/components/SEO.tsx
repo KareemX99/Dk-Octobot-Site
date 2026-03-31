@@ -22,7 +22,7 @@ export default function SEO({
 }: SEOProps) {
   const { language } = useLanguage();
   const siteUrl = 'https://octobot.it.com';
-  const fullTitle = `${title} | DK-OctoBot`;
+  const fullTitle = title === 'DK-OctoBot' ? 'DK-OctoBot' : `${title} | DK-OctoBot`;
 
   useEffect(() => {
     // Update document title
